@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,  user-scalable=no">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <!--<link rel="stylesheet" href="css/adminiate.css" />-->
+    <!--<script type="text/javascript" src="js/jquery-1.7.2.js" ></script>-->
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="node_modules/bootstrap/dist/js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <title>SKOHOUSE</title>
+</head>
+<body>
+<!-- 首页右侧固定元素 -->
+<div class="r_float">
+    <div class="right_fixed yewu">
+        <i></i> <br>
+        <span>业务咨询</span>
+    </div>
+    <div class="right_fixed shouhou">
+        <i></i> <br>
+        <span>售后服务</span>
+    </div>
+    <div class="right_fixed oldWeb">
+        <i></i> <br>
+        <span>老官网</span>
+    </div>
+    <div class="right_fixed tel">
+        <i></i> <br>
+        <span>咨询电话</span>
+    </div>
+</div>
+<!-- header -->
+<header id="header" class="navbar navbar-default ">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="logo" class=".logo"></a>
+        </div>
+        <div id="bs-navbar" class="collapse navbar-collapse navbar-right">
+            <p class="tel .rt nav navbar-nav navbar-right hidden-sm hidden-xs" >
+                <i></i>
+                <span>400-656-0506</span>
+            </p>
+            <ul class=" nav navbar-nav">
+                <li class="hidden-sm hidden-xs hidden-md">舒适休闲鞋引领者</li>
+                <li class="hidden-sm hidden-xs hidden-md">|</li>
+                <li class="active"><a href="">首页</a></li>
+                <li><a href="">品牌</a></li>
+                <li><a href="">新闻</a></li>
+                <li><a href="">店铺</a></li>
+                <li><a href="">加盟</a></li>
+                <li><a href="">联系</a></li>
+                <li class="hidden-sm hidden-xs hidden-md">|</li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!-- banner -->
+<div id="banner" class="banner index_banner">
+
+    <div class="wg"></div>
+    <div class="block_home_slider">
+        <div id="home_slider" class="flexslider">
+            <ul class="slides clearfix">
+                <li>
+                    <div class="slide">
+
+                        <video id="banner_video" autoplay="autoplay" class="img img-responsive c-video video_minbAm" loop="loop" muted="muted">
+                            <source type="video/mp4" src="source/mob.mp4"></source>
+                            <source type="video/webm" src="source/mob.webm"></source>
+                        </video>
+                        <i class="vol glyphicon glyphicon-volume-up"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="slide" style="background: url(img/carousel_01.png) no-repeat center;background-size: cover;"> </div>
+                </li>
+                <li>
+                    <div class="slide" style="background: url(img/carousel_02.png) no-repeat center;background-size: cover;"> </div>
+                </li>
+            </ul>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $('#home_slider').flexslider({
+                    animation : 'slide',
+                    pauseOnHover: true,
+                    controlNav : true,
+                    directionNav : true,
+                    animationLoop : true,
+                    slideshow : false,
+                    useCSS : false
+                });
+
+            });
+
+
+        </script>
+    </div>
+</div>
+<!-- about 关于 -->
+<div id="about_1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <p class="en_title">Welcome To skohouse</p>
+                <h3 class="main-title">关于舒士客</h3>
+                <p class="line_font"></p>
+                <h2 class="con_title">SKO使命与目标</h2>
+                <p class="con_des">无论何时、何地，都可以为所有人持续的提供舒适、<br>
+                    高性价比、时尚的基础鞋饰及家庭生活用品。</p>
+                <div class="con_bot">
+                    <p class="con_detail">为了实现这个目标，需要彻底的将生产与销售用最短，最好的低成本经营方式连接。站在顾客需求角度出发，为顾客提供最好的服务；提供适应全球化标准的，舒适的劳动环境，打造命运共同体的团队经营活动；向着实现年递增30%的销售和收益的目标努力，成为世界第一的舒适休闲鞋饰企业。</p>
+                    <h4><a href="#"><span>了解更多</span></a></h4>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <img class="img-responsive" src="img/about_01.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- cooperate 合作-->
+<div id="about_2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <p class="en_title">Brand interpretation</p>
+                <p class="line_font"></p>
+                <h2 class="con_title">品牌诠释</h2>
+                <p class="con_detail">舒士客(SKOHOUSE)的内在涵义是指生产商直达消费者，摒弃中间化以及不必要的环节，仓储式自选购物模式，以真不二价的经营哲学为消费者带来舒适及最高性价比的商品；</p>
+                <img class="img-responsive" src="img/about_3.png" alt="品牌诠释">
+                <p class="line_font_bot"></p>
+                <div class="about2_bot">
+                    <a class="a_detail">detail</a>
+                    <a href="#"><i class="arrow_rt"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <p class="en_title">Store image</p>
+                <p class="line_font"></p>
+                <h2 class="con_title">店铺形象</h2>
+                <p class="con_detail">舒士客(SKOHOUSE)的内在涵义是指生产商直达消费者，摒弃中间化以及不必要的环节，仓储式自选购物模式，以真不二价的经营哲学为消费者带来舒适及最高性价比的商品；</p>
+                <img class="img-responsive" src="img/about_04.png" alt="品牌诠释">
+                <p class="line_font_bot"></p>
+                <div class="about2_bot">
+                    <a class="a_detail">detail</a>
+                    <a href="#"><i class="arrow_rt"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <p class="en_title">Recruit and recruit</p>
+                <p class="line_font"></p>
+                <h2 class="con_title">加盟招募</h2>
+                <p class="con_detail">舒士客(SKOHOUSE)的内在涵义是指生产商直达消费者，摒弃中间化以及不必要的环节，仓储式自选购物模式，以真不二价的经营哲学为消费者带来舒适及最高性价比的商品；</p>
+                <img class="img-responsive" src="img/about_05.png" alt="品牌诠释">
+                <p class="line_font_bot"></p>
+                <div class="about2_bot">
+                    <a href="#" class="a_detail">detail</a>
+                    <a href="#"><i class="arrow_rt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="cooperate"></div>
+<!-- brand 品牌-->
+<div id="brand"></div>
+<!-- join 加盟-->
+<div id="join"></div>
+<!-- news 资讯 -->
+<div id="news"></div>
+<!-- canal 渠道 -->
+<div id="canal"></div>
+<!-- footer -->
+<footer id="footer"></footer>
+<script src="js/index.js"></script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>
