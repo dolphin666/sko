@@ -159,6 +159,34 @@ a:hover {
   margin: 0;
   padding: 0;
 }
+#about_1,
+#about_2,
+#cooperate,
+#brand,
+#news,
+#canal {
+  padding: 177px 160px;
+}
+@media (max-width: 1520px) {
+  #about_1,
+  #about_2,
+  #cooperate,
+  #brand,
+  #news,
+  #canal {
+    padding: 50px 60px;
+  }
+}
+@media (max-width: 748px) {
+  #about_1,
+  #about_2,
+  #cooperate,
+  #brand,
+  #news,
+  #canal {
+    padding: 30px 0;
+  }
+}
 body {
   background: #fff;
 }
@@ -318,14 +346,6 @@ body {
   color: #000;
   border-bottom: 2px solid #000;
 }
-#about_1,
-#about_2,
-#cooperate,
-#brand,
-#news,
-#canal {
-  padding: 177px 160px;
-}
 .a_detail {
   float: left;
   font-size: 14px;
@@ -337,6 +357,22 @@ body {
   width: 35px;
   height: 15px;
   background: url("../img/pingtu.png") no-repeat -401px 0;
+}
+a.read-more {
+  height: 30px;
+}
+a.read-more > i {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url("../img/pingtu.png") no-repeat -436px 0;
+}
+a.read-more > span {
+  display: inline-block;
+  color: #BABABA;
+  font-size: 18px;
+  line-height: 18px;
+  vertical-align: top;
 }
 /* 关于舒士客 about-1 */
 #about_1 .main-title {
@@ -372,6 +408,21 @@ body {
   border-bottom: 1px solid #000;
   font-weight: bold;
 }
+@media (max-width: 1520px) {
+  #about_1 .main-title {
+    padding-bottom: 15px;
+  }
+  #about_1 .con_title {
+    padding-top: 20px;
+  }
+  #about_1 .con_bot {
+    width: 100%;
+    padding-top: 20px;
+  }
+  #about_1 h4 {
+    padding-top: 20px;
+  }
+}
 /* 关于舒士客2 about_2 */
 #about_2 {
   background: #eee;
@@ -401,4 +452,17 @@ body {
 }
 #about_2 .about2_bot {
   padding-top: 12px;
+}
+/* 合作 cooperate */
+#cooperate .con_head .lf {
+  width: 140px;
+}
+#cooperate .con_head .lf .con_title {
+  padding: 15px 0 50px;
+}
+#cooperate .con_head .lf .line_font {
+  width: 95px;
+}
+#cooperate .con_head .rt {
+  width: 135px;
 }
