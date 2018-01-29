@@ -192,7 +192,7 @@ body {
 }
 #header {
   background-color: #fff;
-  padding: 20px 140px  20px 160px;
+  padding: 20px 140px 20px 160px;
   border: none;
 }
 @media (max-width: 1420px) {
@@ -465,4 +465,41 @@ a.read-more > span {
 }
 #cooperate .con_head .rt {
   width: 135px;
+}
+#cooperate .row {
+  padding-top: 76px;
+}
+#cooperate .row .coo_box {
+  padding: 45px 0 55px 0;
+  -webkit-box-shadow: 5px 5px 30px 0px #ebebeb;
+  -moz-box-shadow: 5px 5px 30px 0px #ebebeb;
+  box-shadow: 5px 5px 30px 0px #ebebeb;
+  position: relative;
+  z-index: 20;
+}
+#cooperate .row .coo_box .lf {
+  width: 108px;
+  height: 95px;
+  padding-top: 72px;
+  border-left: 6px solid #d7142e;
+}
+#cooperate .row .coo_box .lf i {
+  float: right;
+  width: 68px;
+  height: 68px;
+  margin-top: -60px;
+  background: url("../img/pingtu.png") no-repeat 1px -65px;
+}
+#cooperate .row .coo_box .rt p.coo_title h3 {
+  width: 171px;
+}
+#cooperate .row .coo_box .rt .line_font {
+  width: 64px;
+  border-bottom: 4px solid #999;
+  padding: 24px 0;
+}
+#cooperate .row .coo_box .rt .coo_detail {
+  color: #7B7B7B;
+  font-size: 18px;
+  line-height: 32px;
 }
