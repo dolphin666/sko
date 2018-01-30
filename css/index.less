@@ -9,6 +9,7 @@ body {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	height: 1000px;
+	width:expression(document.body.clientWidth < 600? "600px": "auto" );
 }
 
 div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, blockquote, p {
@@ -109,8 +110,15 @@ a:hover {
 
 /******  首页右侧固定元素 ******/
 .r_float {
+	position: fixed;
+	bottom: 50%;
+	margin-bottom: -140px;
+	right: 0;
+	height: 280px;
+	width: 200px;
+	z-index: 1000;
 	.right_fixed {
-		position: fixed;
+		position: absolute;
 		right: 0;
 		width: 80px;
 		height: 60px;
@@ -118,7 +126,6 @@ a:hover {
 		background: #c6162e;
 		text-align: center;
 		color: @font-white;
-		z-index: 1000;
 		i {
 			display: inline-block;
 			width: 36px;
@@ -129,29 +136,30 @@ a:hover {
 			display: inline-block;;
 			font-size: @font-xs;
 		}
-
 	}
-
+	.right_fixed:hover{
+		margin-left: -10px;
+	}
 	.yewu {
-		top: 120px+290px;
+		top: 0px;
 		i {
 			background-position: -258px 5px;
 		}
 	}
 	.shouhou {
-		top: 186px+290px;
+		top: 70px;
 		i {
 			background-position: -292px 5px;
 		}
 	}
 	.oldWeb {
-		top: 252px+290px;
+		top: 140px;
 		i {
 			background-position: -328px 5px;
 		}
 	}
 	.tel {
-		top: 318px+290px;
+		top: 210px;
 		i {
 			background-position: -364px 5px;
 		}
@@ -531,14 +539,19 @@ a.read-more {
 	}
 	.row {
 		padding-top: 76px;
+		>div{
+			padding:10px 20px 20px 10px;
+		}
 		.coo_box{
+			clear: both;
 			padding: 45px 0 55px 0;
-			//border: 1px solid #EBEBEB;
+			min-height: 274px;
 			-webkit-box-shadow: 5px 5px 30px 0px #ebebeb;
 			-moz-box-shadow: 5px 5px 30px 0px #ebebeb;
 			box-shadow: 5px 5px 30px 0px #ebebeb;
 			position: relative;
 			z-index: 20;
+			overflow: hidden;
 			.lf {
 				width: 108px;
 				height: 95px;
@@ -553,16 +566,22 @@ a.read-more {
 					background: url("../img/pingtu.png") no-repeat  1px -65px;
 				}
 			}
+			@media (max-width:1300px){
+				.lf{
+					width: 90px;}
+			}
 			.rt{
 				width: 70%;
 				padding-right:55px;
+				.arrow_rt{margin-top: -20px;}
 				p.coo_title{
 					h3{width:171px;}
 				}
 				.line_font{
 					width: 64px;
 					border-bottom: 4px solid #999;
-					padding: 24px 0;
+					padding-top: 24px;
+					margin-bottom: 24px;
 				}
 				.coo_detail{
 					color:#7B7B7B;
@@ -570,6 +589,24 @@ a.read-more {
 					line-height: 32px;
 				}
 			}
+			@media (max-width:765px){
+				.rt{
+					float: left;
+					padding-left: 20px;
+				}
+			}
+			@media (max-width: 1550px) and(min-width:
+		1170px){
+				.rt{
+					padding-right: 10px;
+				}
+			}
+		}
+		>div:nth-child(2)>.lf i{
+			background-position: -67px -65px;
+		}
+		>div:nth-child(3)>.lf i{
+			background-position: -132px -65px;
 		}
 	}
 }
