@@ -14,10 +14,10 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/index.css">
     <!--<script src="node_modules/bootstrap/dist/js/jquery.min.js"></script>-->
     <!--<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>-->
     <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
     <script src="js/jquery-2.1.4.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="js/swiper.min.js"></script>
@@ -25,24 +25,24 @@
 </head>
 <body>
 <!-- 首页右侧固定元素 -->
-<div class="r_float">
-    <div class="right_fixed yewu">
-        <i></i> <br>
-        <span>业务咨询</span>
-    </div>
-    <div class="right_fixed shouhou">
-        <i></i> <br>
-        <span>售后服务</span>
-    </div>
-    <div class="right_fixed oldWeb">
-        <i></i> <br>
-        <span>老官网</span>
-    </div>
-    <div class="right_fixed tel">
-        <i></i> <br>
-        <span>咨询电话</span>
-    </div>
-</div>
+<!--<div class="r_float">-->
+<!--<div class="right_fixed yewu">-->
+<!--<i></i> <br>-->
+<!--<span>业务咨询</span>-->
+<!--</div>-->
+<!--<div class="right_fixed shouhou">-->
+<!--<i></i> <br>-->
+<!--<span>售后服务</span>-->
+<!--</div>-->
+<!--<div class="right_fixed oldWeb">-->
+<!--<i></i> <br>-->
+<!--<span>老官网</span>-->
+<!--</div>-->
+<!--<div class="right_fixed tel">-->
+<!--<i></i> <br>-->
+<!--<span>咨询电话</span>-->
+<!--</div>-->
+<!--</div>-->
 <!-- header -->
 <header id="header" class="navbar navbar-default ">
     <div class="container-fluid">
@@ -121,14 +121,14 @@
         </script>
     </div>
 </div>-->
-<div ic="banner" class="banner">
+<div id="banner" class="banner">
 
     <!--<img src="img/shangyi.png" alt="" class="shangyi">
     <img src="img/xiayi.png" alt="" class="xiayi">-->
     <div class="swiper-container aa">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <div class="zhong">
+                <div class="zhong  hidden-xs">
                     <div class="wenzi">
                         <p><b>舒适休闲</b>鞋引领者</p>
                         <span>Comfortable casual shoes Guide</span>
@@ -142,7 +142,8 @@
                 </div>
                 <img src="img/jy.png" alt="" class="jy">
                 <img src="img/wjy.png" alt="" class="jy" style="display: none">
-                <video  id="myvideo" autoplay loop width="100%" height="100%" muted style="width: 100%;height:auto; object-fit:fill;position: relative" src="source/mob.mp4">
+                <video id="myvideo" autoplay loop width="100%" height="100%" muted
+                       style="width: 100%;height:auto; object-fit:fill;position: relative" src="source/mob.mp4">
                 </video>
             </div>
             <div class="swiper-slide">
@@ -152,7 +153,9 @@
                 <img class="img-responsive" src="img/banner_02.png" alt="">
             </div>
         </div>
-        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span
+                class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span
+                class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
     </div>
 </div>
 <!-- about 关于 -->
@@ -234,7 +237,7 @@
                 <p class="line_font"></p>
             </div>
             <div class="rt">
-                <a class="read-more">
+                <a href="#" class="read-more">
                     <i class="read_icon"></i>
                     <span class="read_con">Read more</span>
                 </a>
@@ -275,7 +278,7 @@
                 </div>
             </div>
         </div>
-        <div  class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6">
             <div class="coo_box">
                 <div class="lf">
                     <i></i>
@@ -295,19 +298,292 @@
     </div>
 </div>
 <!-- brand 品牌-->
-<div id="brand"></div>
+<div id="brand">
+    <div class="container">
+        <div class="con_head">
+            <div class="lf">
+                <p class="en_title">Brand value</p>
+                <h2 class="con_title">品牌价值</h2>
+                <p class="line_font"></p>
+            </div>
+            <div class="rt">
+                <a href="#" class="read-more">
+                    <i class="read_icon"></i>
+                    <span class="read_con">Read more</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container brand_bot">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div>
+                    <img class="img-responsive" src="img/brand_01.jpg" alt="团队运营 共享品牌价值">
+                    <p class="line_font_bot"></p>
+                    <a class="a_detail">detail</a>
+                    <a href="#"><i class="arrow_rt"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div>
+                    <img class="img-responsive" src="img/brand_02.jpg" alt="顾客见证">
+                    <p class="line_font_bot"></p>
+                    <a class="a_detail">detail</a>
+                    <a href="#"><i class="arrow_rt"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div>
+                    <img class="img-responsive" src="img/brand_03.jpg" alt="品牌荣誉">
+                    <p class="line_font_bot"></p>
+                    <a class="a_detail">detail</a>
+                    <a href="#"><i class="arrow_rt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- join 加盟-->
-<div id="join"></div>
+<div id="join">
+    <div class="container">
+        <div class="con_head">
+            <div class="lf">
+                <p class="en_title">Brand value</p>
+                <h2 class="con_title">品牌价值</h2>
+                <p class="line_font"></p>
+            </div>
+            <div class="rt">
+                <a href="#" class="read-more">
+                    <i class="read_icon"></i>
+                    <span class="read_con">Read more</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <p>客户要求：有品牌意识，认可公司的品牌文化和经营理念
+        品牌定位：时尚休闲、实惠舒适，时尚休闲鞋行业No.1</p>
+    <form action="">
+        <div class="row">
+            <p class="col-lg-6 col-md-12">
+                <span>电话</span>
+                <span>&nbsp;|</span>
+                <input type="text">
+            </p>
+            <p class="col-lg-6 col-md-12">
+                <span>姓名</span>
+                <span>&nbsp;|</span>
+                <input type="text">
+            </p>
+        </div>
+        <div class="row">
+            <p class="col-lg-6 col-md-12">
+                <span>意向开店区域</span>
+                <span>&nbsp;|</span>
+                <input type="text">
+            </p>
+            <p class="col-lg-6 col-md-12 join_btn">
+                <button type="button" class="text-center" value="加盟提交">加盟提交</button>
+            </p>
+        </div>
+    </form>
+</div>
 <!-- news 资讯 -->
-<div id="news"></div>
+<div id="news">
+    <div class="container">
+        <div class="con_head">
+            <div class="lf">
+                <p class="en_title">Brand value</p>
+                <h2 class="con_title">品牌价值</h2>
+                <p class="line_font"></p>
+            </div>
+            <div class="rt">
+                <a href="#" class="read-more">
+                    <i class="read_icon"></i>
+                    <span class="read_con">Read more</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-sm-6 col-xs-12">
+                <img class="img-responsive" src="img/about_3.png" alt="品牌诠释">
+                <div class="news_con">
+                    <h3>品牌动态 Brand dynamics</h3>
+                    <p class="con_detail">
+                        舒士客(SKOHOUSE)的内在涵义是指生产商直达消费者，摒弃中间化以及不必要的环节，仓储式自选购物模式，以真不二价的经营哲学为消费者带来舒适及最高性价比的商品；</p>
+                    <p class="line_font_bot"></p>
+                    <div class="about2_bot">
+                        <a class="a_detail">detail</a>
+                        <a href="#"><i class="arrow_rt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-xs-12">
+                <img class="img-responsive" src="img/about_3.png" alt="品牌诠释">
+                <div class="news_con">
+                    <h3>行业资讯 Industry information</h3>
+                    <p class="con_detail">
+                        舒士客(SKOHOUSE)的内在涵义是指生产商直达消费者，摒弃中间化以及不必要的环节，仓储式自选购物模式，以真不二价的经营哲学为消费者带来舒适及最高性价比的商品；</p>
+                    <p class="line_font_bot"></p>
+                    <div class="about2_bot">
+                        <a class="a_detail">detail</a>
+                        <a href="#"><i class="arrow_rt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-xs-12">
+                <img class="img-responsive" src="img/about_3.png" alt="品牌诠释">
+                <div class="news_con">
+                    <h3>媒体报道 Media coverage</h3>
+                    <p class="con_detail">
+                        舒士客(SKOHOUSE)的内在涵义是指生产商直达消费者，摒弃中间化以及不必要的环节，仓储式自选购物模式，以真不二价的经营哲学为消费者带来舒适及最高性价比的商品；</p>
+                    <p class="line_font_bot"></p>
+                    <div class="about2_bot">
+                        <a class="a_detail">detail</a>
+                        <a href="#"><i class="arrow_rt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- canal 渠道 -->
-<div id="canal"></div>
+<div id="canal">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-xs-12">
+                <div class="news_con">
+                    <p class="en_title">News information</p>
+                    <h2 class="con_title">渠道资源</h2>
+                    <p class="line_font"></p>
+                    <p class="con_detail">
+                        优质渠道资源，创造零售未来</p>
+                    <p class="line_font_bot"></p>
+                    <ul>
+                        <li><img src="img/qudao_03.png" alt=""></li>
+                        <li><img src="img/qudao_04.png" alt=""></li>
+                        <li><img src="img/qudao_07.png" alt=""></li>
+                        <li><img src="img/qudao_09.png" alt=""></li>
+                        <li><img src="img/qudao_10.png" alt=""></li>
+                        <li><img src="img/qudao_11.png" alt=""></li>
+                        <li><img src="img/qudao_13.png" alt=""></li>
+                        <li><img src="img/qudao_14.png" alt=""></li>
+                        <li><img src="img/qudao_15.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 news_02">
+                <div class="con_head">
+                    <div class="lf">
+                        <p class="en_title">News information</p>
+                        <h2 class="con_title">媒介资源</h2>
+                        <p class="line_font"></p>
+                    </div>
+                    <div class="rt">
+                        <a href="#" class="read-more">
+                            <i class="read_icon"></i>
+                            <span class="read_con">Read more</span>
+                        </a>
+                    </div>
+                </div>
+                <p class="con_detail">
+                    优质渠道资源，创造零售未来</p>
+                <div class="news_con">
+                    <ul>
+                        <li><img src="img/qudao_03.png" alt=""></li>
+                        <li><img src="img/qudao_04.png" alt=""></li>
+                        <li><img src="img/qudao_07.png" alt=""></li>
+                        <li><img src="img/qudao_09.png" alt=""></li>
+                        <li><img src="img/qudao_10.png" alt=""></li>
+                        <li><img src="img/qudao_11.png" alt=""></li>
+                        <li><img src="img/qudao_13.png" alt=""></li>
+                        <li><img src="img/qudao_14.png" alt=""></li>
+                        <li><img src="img/qudao_15.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- footer -->
-<footer id="footer"></footer>
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="foot_list_tit">
+                    <span>Contact &nbsp;<i class="contact_icon"></i></span>
+                    <span class="contact_more"><a href="#">更多</a></span>
+                </div>
+                <p>香港公司地址：香港九龙旺角道33号凯途发展大厦7F</p>
+                <p>上海公司地址：上海横泰经济开发区B2</p>
+                <p>杭州营运地址：中国杭州市江干区艮山西路78号东门大厦8F </p>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="foot_list_tit">
+                    <span>Wechat</span>
+                </div>
+                <i class="Wechat_m"></i>
+                <a href="#"><i class="weibo"></i></a>
+                <a href="#"><i class="mail"></i></a>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="foot_list_tit">
+                    <span>Advisory</span>
+                </div>
+                <button><i class="qq_btn"></i> 业务咨询</button>
+                <br>
+                <button><i class="shouhou_btn"></i>售后服务</button>
+            </div>
+        </div>
+    </div>
+</footer>
+<footer id="footer_02">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-xs-12">
+                <ul>
+                    <li>
+                        <a href="#">品牌</a>
+                    </li>
+                    <li>
+                        <a href="#">新闻</a>
+                    </li>
+                    <li>
+                        <a href="#">店铺</a>
+                    </li>
+                    <li>
+                        <a href="#">加盟</a>
+                    </li>
+                    <li>
+                        <a href="#">联系</a>
+                    </li>
+
+                </ul>
+                <span>招募： 13336061161</span>
+            </div>
+            <div class="serch col-md-6 col-xs-12">
+                <p>
+                    <input type="text" placeholder="www.skohouse.com">
+                    <button></button>
+                    <span>搜索了解更多</span>
+                </p>
+            </div>
+        </div>
+        <p class="foot2_con">
+            <i class="logo_sm"></i>
+            <span> ©2018 舒士客 </span>
+            <span> ALL RIGHTS RESERVED. 浙ICP备07001687号 </span>
+            <i class="jing"></i>
+            <span> 浙公网安备 33010602000750号 </span>
+        </p>
+    </div>
+</footer>
 <script src="js/index.js"></script>
 <script>
-    var h=document.body.clientHeight;
-    var w=document.body.clientWidth;
+    var h = document.body.clientHeight;
+    var w = document.body.clientWidth;
     /*$("#video").width(w);
     $("#video").height(h);*/
     /*var mySwiper = new Swiper ('.swiper-container', {
@@ -320,30 +596,30 @@
         prevButton: '.shangyi',
 
     });*/
-    var mySwiper = new Swiper('.swiper-container',{
+    var mySwiper = new Swiper('.swiper-container', {
         direction: 'horizontal',//滑动方向vertical 是垂直   horizontal是水平
         loop: true,   //循环轮播
-        pagination : '.swiper-pagination',
-        paginationClickable :true
+        pagination: '.swiper-pagination',
+        paginationClickable: true
 
     });
-    var flaw=true;
+    var flaw = true;
     $(".jy").click(function () {
-        var myvideo=document.getElementById("myvideo");
-        if(flaw){
+        var myvideo = document.getElementById("myvideo");
+        if (flaw) {
             myvideo.muted = false;
             $(".jy").eq(0).hide();
             $(".jy").eq(1).show();
-            flaw=!flaw
-        }else{
+            flaw = !flaw
+        } else {
             myvideo.muted = true;
             $(".jy").eq(0).show();
             $(".jy").eq(1).hide();
-            flaw=!flaw
+            flaw = !flaw
         }
     })
     $(".zhongb").click(function () {
-        var myvideo=document.getElementById("myvideo");
+        var myvideo = document.getElementById("myvideo");
         if (myvideo.paused)
             myvideo.play();
         else
