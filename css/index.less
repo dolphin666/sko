@@ -215,11 +215,72 @@ body {
 		height: 53px;
 		background: url("../img/pingtu.png") no-repeat;
 	}
-	a {
+	ul{
+		li{
+			>a {
+				background-color: #fff;
+				padding: 10px 20px;
+			}
+		}
+	}
+	.sub-nav{
+		position: fixed;
+		top: 100px;
+		left: 0;
+		width: 100%;
 		background-color: #fff;
-		padding: 10px 20px;
+		height: 50px;
+		z-index: 2;
+		border-top: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
+		display: none;
+		dl{
+			float: right;
+			width: 736px;
+		}
+		dd{
+			margin-right: 60px;
+			font-size: 14px;
+			line-height: 47px;
+			padding-top: 4px;
+			position: relative;
+			float: left;
+			a{
+				display: inline-block;
+				color: #777;
+			}
+			i{
+				display: block;
+				width: 0;
+				position: absolute;
+				left: 50%;
+				bottom: 0;
+				height: 3px;
+				background-color: #333;
+			}
+		}
+		dd:hover a{
+			color: #333;
+		}
+		dd:hover i{
+			left: 0;
+			width: 100%;
+			transition: all 0.4s ease 0s;
+		}
+		dd.hover a{
+			color: #333;
+		}
+		dd.hover i{
+			left: 0;
+			width: 100%;
+		}
+		li.cur a.tit-a {
+			color: #888;
+		}
 	}
 }
+
+
 
 #bs-navbar {
 	color: #292929;
@@ -936,8 +997,12 @@ a.read-more {
 				line-height: 0;
 			}
 		}
-		li:last-child{
+		li:last-child,li:nth-child(5){
 			border:none;
+			color: #838383;
+		}
+		li:nth-child(6){
+			margin-left: 40px;
 		}
 	}
 	ul+span{

@@ -24,26 +24,26 @@
     <title>SKOHOUSE</title>
 </head>
 <body>
-<!-- 首页右侧固定元素 -->
-<!--<div class="r_float">-->
-<!--<div class="right_fixed yewu">-->
-<!--<i></i> <br>-->
-<!--<span>业务咨询</span>-->
-<!--</div>-->
-<!--<div class="right_fixed shouhou">-->
-<!--<i></i> <br>-->
-<!--<span>售后服务</span>-->
-<!--</div>-->
-<!--<div class="right_fixed oldWeb">-->
-<!--<i></i> <br>-->
-<!--<span>老官网</span>-->
-<!--</div>-->
-<!--<div class="right_fixed tel">-->
-<!--<i></i> <br>-->
-<!--<span>咨询电话</span>-->
-<!--</div>-->
-<!--</div>-->
-<!-- header -->
+ <!-- 首页右侧固定元素 -->
+<div class="r_float">
+<div class="right_fixed yewu">
+<i></i> <br>
+<span>业务咨询</span>
+</div>
+<div class="right_fixed shouhou">
+<i></i> <br>
+<span>售后服务</span>
+</div>
+<div class="right_fixed oldWeb">
+<i></i> <br>
+<span>老官网</span>
+</div>
+<div class="right_fixed tel">
+<i></i> <br>
+<span>咨询电话</span>
+</div>
+</div>
+ <!-- header -->
 <header id="header" class="navbar navbar-default ">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -54,21 +54,34 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="#" class="logo" class=".logo"></a>
+            <a href="#" class="logo"></a>
         </div>
         <div id="bs-navbar" class="collapse navbar-collapse navbar-right">
             <p class="tel .rt nav navbar-nav navbar-right hidden-sm hidden-xs">
                 <i></i>
                 <span>400-656-0506</span>
             </p>
-            <ul class=" nav navbar-nav">
+            <ul class="list-menu nav navbar-nav">
                 <li class="hidden-sm hidden-xs hidden-md">舒适休闲鞋引领者</li>
                 <li class="hidden-sm hidden-xs hidden-md">|</li>
                 <li class="active"><a href="">首页</a></li>
-                <li><a href="">品牌</a></li>
-                <li><a href="">新闻</a></li>
-                <li><a href="">店铺</a></li>
-                <li><a href="">加盟</a></li>
+                <li  class="sub-li"><a class="tit-a" href="">品牌</a></li>
+                <li class="sub-li">
+                    <a class="tit-a" href="">新闻</a>
+                    <div class="sub-nav">
+                        <div class="w1520">
+                            <dl>
+                                <dd><a href="#">公司简介</a><i></i></dd>
+                                <dd><a href="#">企业文化</a><i></i></dd>
+                                <dd><a href="#">发展历程</a><i></i></dd>
+                                <dd><a href="#">团队介绍</a><i></i></dd>
+                                <dd><a href="#">未来&愿景</a><i></i></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+                <li class="sub-li"><a class="tit-a" href="">店铺</a></li>
+                <li class="sub-li"><a class="tit-a" href="">加盟</a></li>
                 <li><a href="">联系</a></li>
                 <li class="hidden-sm hidden-xs hidden-md">|</li>
             </ul>
@@ -76,51 +89,6 @@
     </div>
 </header>
 <!-- banner -->
-<!--<div id="banner" class="banner index_banner">
-
-    <div class="wg"></div>
-    <div class="block_home_slider">
-        <div id="home_slider" class="flexslider">
-            <ul class="slides clearfix">
-                <li>
-                    <div class="slide">
-
-                        <video id="banner_video" autoplay="autoplay" class="img img-responsive c-video video_minbAm"
-                               loop="loop" controls>
-                            <source type="video/mp4" src="source/mob.mp4"></source>
-                            <source type="video/webm" src="source/mob.webm"></source>
-                        </video>
-                    </div>
-                    <i type="button" class="vol glyphicon glyphicon-volume-up"></i>
-                </li>
-                <li>
-                    <div class="slide"
-                         style="background: url(img/carousel_01.png) no-repeat center;background-size: cover;"></div>
-                </li>
-                <li>
-                    <div class="slide"
-                         style="background: url(img/carousel_02.png) no-repeat center;background-size: cover;"></div>
-                </li>
-            </ul>
-        </div>
-        <script type="text/javascript">
-            $(function () {
-                $('#home_slider').flexslider({
-                    animation: 'slide',
-                    pauseOnHover: true,
-                    controlNav: true,
-                    directionNav: true,
-                    animationLoop: true,
-                    slideshow: false,
-                    useCSS: false
-                });
-
-            });
-
-
-        </script>
-    </div>
-</div>-->
 <div id="banner" class="banner">
 
     <!--<img src="img/shangyi.png" alt="" class="shangyi">
@@ -142,7 +110,7 @@
                 </div>
                 <img src="img/jy.png" alt="" class="jy">
                 <img src="img/wjy.png" alt="" class="jy" style="display: none">
-                <video id="myvideo" autoplay loop width="100%" height="100%" muted
+                <video id="myvideo" loop width="100%" height="100%" muted
                        style="width: 100%;height:auto; object-fit:fill;position: relative" src="source/mob.mp4">
                 </video>
             </div>
@@ -285,8 +253,8 @@
                 </div>
                 <div class="rt">
                     <p class="coo_title">
-                    <h3>整店输出</h3>
-                    <i class="arrow_rt"></i>
+                        <h3>整店输出</h3>
+                        <i class="arrow_rt"></i>
                     </p>
                     <p class="line_font"></p>
                     <p class="coo_detail">全程无忧开店，盈利有保障
@@ -348,8 +316,8 @@
     <div class="container">
         <div class="con_head">
             <div class="lf">
-                <p class="en_title">Brand value</p>
-                <h2 class="con_title">品牌价值</h2>
+                <p class="en_title">Recruit and recruit</p>
+                <h2 class="con_title">加盟招募</h2>
                 <p class="line_font"></p>
             </div>
             <div class="rt">
@@ -392,8 +360,8 @@
     <div class="container">
         <div class="con_head">
             <div class="lf">
-                <p class="en_title">Brand value</p>
-                <h2 class="con_title">品牌价值</h2>
+                <p class="en_title">News information</p>
+                <h2 class="con_title">新闻动态</h2>
                 <p class="line_font"></p>
             </div>
             <div class="rt">
@@ -559,9 +527,11 @@
                     <li>
                         <a href="#">联系</a>
                     </li>
+                    <li>
+                        招募： 13336061161
+                    </li>
 
                 </ul>
-                <span>招募： 13336061161</span>
             </div>
             <div class="serch col-md-6 col-xs-12">
                 <p>
@@ -598,10 +568,16 @@
     });*/
     var mySwiper = new Swiper('.swiper-container', {
         direction: 'horizontal',//滑动方向vertical 是垂直   horizontal是水平
+        autoplay:3000,
         loop: true,   //循环轮播
         pagination: '.swiper-pagination',
         paginationClickable: true
 
+    });
+    $(".swiper-container").mouseenter(function () {//滑过悬停
+        mySwiper.stopAutoplay();//mySwiper 为上面你swiper实例化的名称
+    }).mouseleave(function(){//离开开启
+        mySwiper.startAutoplay();
     });
     var flaw = true;
     $(".jy").click(function () {
@@ -626,18 +602,5 @@
             myvideo.pause();
     })
 </script>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 </body>
 </html>

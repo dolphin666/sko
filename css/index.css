@@ -240,9 +240,64 @@ body {
   height: 53px;
   background: url("../img/pingtu.png") no-repeat;
 }
-#header a {
+#header ul li > a {
   background-color: #fff;
   padding: 10px 20px;
+}
+#header .sub-nav {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  height: 50px;
+  z-index: 2;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  display: none;
+}
+#header .sub-nav dl {
+  float: right;
+  width: 736px;
+}
+#header .sub-nav dd {
+  margin-right: 60px;
+  font-size: 14px;
+  line-height: 47px;
+  padding-top: 4px;
+  position: relative;
+  float: left;
+}
+#header .sub-nav dd a {
+  display: inline-block;
+  color: #777;
+}
+#header .sub-nav dd i {
+  display: block;
+  width: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 3px;
+  background-color: #333;
+}
+#header .sub-nav dd:hover a {
+  color: #333;
+}
+#header .sub-nav dd:hover i {
+  left: 0;
+  width: 100%;
+  transition: all 0.4s ease 0s;
+}
+#header .sub-nav dd.hover a {
+  color: #333;
+}
+#header .sub-nav dd.hover i {
+  left: 0;
+  width: 100%;
+}
+#header .sub-nav li.cur a.tit-a {
+  color: #888;
 }
 #bs-navbar {
   color: #292929;
@@ -904,8 +959,13 @@ a.read-more > span {
   padding: 0 35px;
   line-height: 0;
 }
-#footer_02 ul li:last-child {
+#footer_02 ul li:last-child,
+#footer_02 ul li:nth-child(5) {
   border: none;
+  color: #838383;
+}
+#footer_02 ul li:nth-child(6) {
+  margin-left: 40px;
 }
 #footer_02 ul + span {
   margin-left: 55px;
