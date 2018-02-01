@@ -764,11 +764,19 @@ a.read-more > span {
   border: none;
   background: rgba(255, 255, 255, 0);
 }
+@media (max-width: 768px) {
+  #join form .row p {
+    width: 240px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 3px 5px;
+  }
+}
 #join form .row p:last-child {
   float: right;
 }
 #join form .row p.join_btn {
-  width: 300px;
   text-align: center;
 }
 @media (max-width: 1750px) {
@@ -825,9 +833,6 @@ a.read-more > span {
 }
 #canal .news_con ul li img {
   height: 89px;
-}
-#canal .news_02 {
-  width: 50%;
 }
 #canal .news_02 .con_title {
   padding-bottom: 13px;
