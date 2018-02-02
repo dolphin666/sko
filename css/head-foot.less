@@ -10,6 +10,7 @@ body {
 	box-sizing: border-box;
 	height: 1000px;
 }
+
 div,
 dl,
 dt,
@@ -32,34 +33,42 @@ p {
 	padding: 0;
 	margin: 0;
 }
+
 table,
 td,
 tr,
 th {
 	font-size: 12px;
 }
+
 li {
 	list-style: none;
 	vertical-align: bottom;
 }
+
 img {
 	Vertical-aliagn: top;
 	border: 0;
 }
+
 ol,
 ul {
 	list-style: none;
 }
+
 li {
 	vertical-align: bottom;
 }
+
 a {
 	color: #838383;
 	text-decoration: none;
 }
+
 a:visited {
 	text-decoration: none;
 }
+
 .clearfix:after {
 	visibility: hidden;
 	display: block;
@@ -68,28 +77,35 @@ a:visited {
 	clear: both;
 	height: 0;
 }
+
 a:hover {
 	color: #838383;
 	text-decoration: none;
 }
+
 .lf {
 	float: left;
 }
+
 .rt {
 	float: right;
 }
+
 .cl {
 	clear: both;
 }
+
 /* Hides from IE-mac \*/
 *:first-child + html .clearfix {
 	zoom: 1;
 }
+
 /* IE7 */
 * html .clearfix {
 	height: 1%;
 	zoom: 1;
 }
+
 .clearfix {
 	display: block;
 }
@@ -119,18 +135,19 @@ a:hover {
 	margin: 0;
 	padding: 0;
 }
- #footer,#footer_02 {
+
+#footer, #footer_02 {
 	padding: 177px 160px;
 }
 
 @media (max-width: 1520px) {
-	 #footer,#footer_02  {
+	#footer, #footer_02 {
 		padding: 50px 60px;
 	}
 }
 
 @media (max-width: 748px) {
-	#footer,#footer_02  {
+	#footer, #footer_02 {
 		padding: 30px 20px;
 	}
 }
@@ -156,21 +173,26 @@ body {
 		width: 100%;
 		padding: 0;
 	}
-	.logo {
+	/*.logo {
 		float: left;
 		width: 218px;
 		height: 53px;
 		background: url("../img/pingtu.png") no-repeat;
+	}*/
+	@media (max-width: 480px){
+		.logo img {
+			height: 50px;
+		}
 	}
-	ul{
-		li{
-			>a {
+	ul {
+		li {
+			> a {
 				background-color: #fff;
 				padding: 10px 20px;
 			}
 		}
 	}
-	.sub-nav{
+	.sub-nav {
 		position: fixed;
 		top: 100px;
 		left: 0;
@@ -181,22 +203,22 @@ body {
 		border-top: 1px solid #ddd;
 		border-bottom: 1px solid #ddd;
 		display: none;
-		dl{
+		dl {
 			float: right;
 			width: 736px;
 		}
-		dd{
+		dd {
 			margin-right: 60px;
 			font-size: 14px;
 			line-height: 47px;
 			padding-top: 4px;
 			position: relative;
 			float: left;
-			a{
+			a {
 				display: inline-block;
 				color: #777;
 			}
-			i{
+			i {
 				display: block;
 				width: 0;
 				position: absolute;
@@ -206,18 +228,18 @@ body {
 				background-color: #333;
 			}
 		}
-		dd:hover a{
+		dd:hover a {
 			color: #333;
 		}
-		dd:hover i{
+		dd:hover i {
 			left: 0;
 			width: 100%;
 			transition: all 0.4s ease 0s;
 		}
-		dd.hover a{
+		dd.hover a {
 			color: #333;
 		}
-		dd.hover i{
+		dd.hover i {
 			left: 0;
 			width: 100%;
 		}
@@ -304,97 +326,99 @@ body {
 				float: right;
 			}
 		}
-		.Wechat_m{
+		.Wechat_m {
 			display: inline-block;
 			width: 90px;
 			height: 90px;
 			background: url("../img/pingtu.png") no-repeat -219px -70px;
 		}
-		.weibo,.mail{
+		.weibo, .mail {
 			display: inline-block;
 			margin-left: 10px;
 			width: 36px;
 			height: 36px;
 			background: url("../img/pingtu.png") no-repeat -260px -34px;
 		}
-		.mail{
+		.mail {
 			background-position: -296px -34px;
 		}
-		button{
+		button {
 			width: 120px;
 			height: 36px;
 			border: 1px solid #E3E3E3;
 			background: #fff;
 			margin-bottom: 12px;
-			i{
+			i {
 				display: inline-block;
 				width: 20px;
 				height: 20px;
 				background: url("../img/pingtu.png") no-repeat -460px 4px;
 			}
-			i.shouhou_btn{
+			i.shouhou_btn {
 				background-position: -479px 4px;
 			}
 		}
 	}
-	@media (max-width:1200px){
-		.row{padding: 0;}
+	@media (max-width: 1200px) {
+		.row {
+			padding: 0;
+		}
 	}
-	@media (max-width:765px){
-		.row{
-			>div{
-				padding:0;
+	@media (max-width: 765px) {
+		.row {
+			> div {
+				padding: 0;
 			}
 		}
 	}
 }
 
 /* footer_02 */
-#footer_02{
+#footer_02 {
 	padding: 85px 160px;
-	@media (max-width:1200px){
-		padding:35px 60px 80px;
+	@media (max-width: 1200px) {
+		padding: 35px 60px 80px;
 	}
-	@media (max-width:675px){
-		padding:35px 5px 80px;
+	@media (max-width: 675px) {
+		padding: 35px 5px 80px;
 	}
 	background: #111;
 	color: #ffffff;
-	.row{
+	.row {
 		border-bottom: 1px solid #303030;
 		padding-bottom: 50px;
 	}
-	ul{
+	ul {
 		display: inline-block;
-		li{
+		li {
 			height: 14px;
 			margin-bottom: 20px;
 			border-right: 1px solid #aaa;
 			float: left;
-			a{
+			a {
 				font-size: 14px;
 				padding: 0 35px;
 				line-height: 0;
 			}
 		}
-		li:last-child,li:nth-child(5){
-			border:none;
+		li:last-child, li:nth-child(5) {
+			border: none;
 			color: #838383;
 		}
-		li:nth-child(6){
+		li:nth-child(6) {
 			padding-left: 40px;
 		}
 	}
-	div.serch{
-		input{
+	div.serch {
+		input {
 			display: block;
 			float: left;
-			height:30px;
+			height: 30px;
 			background: #000;
 			border: 1px solid #fff;
 			padding: 0 5px;
 		}
-		button{
+		button {
 			display: block;
 			float: left;
 			width: 30px;
@@ -402,27 +426,27 @@ body {
 			border: none;
 			background: url("../img/search_03.png") no-repeat;
 		}
-		span{
+		span {
 			padding-left: 15px;
 			display: inline-block;
 			width: 100px;
 			margin-top: 15px;
 		}
 	}
-	.foot2_con{
+	.foot2_con {
 		margin-top: 40px;
 		height: 20px;
 		line-height: 20px;
-		span{
+		span {
 			padding: 10px;
 		}
-		.logo_sm{
+		.logo_sm {
 			display: inline-block;
 			width: 110px;
 			height: 20px;
 			background: url("../img/logo_sm.png") no-repeat 0 7px;
 		}
-		.jing{
+		.jing {
 			display: inline-block;
 			width: 20px;
 			height: 20px;

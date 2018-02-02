@@ -1,0 +1,246 @@
+@title-black: #121212;
+@bg-gray: #eee;
+@font-red: #C5152D;
+@font-white: #fff;
+@font-black: #000;
+@font-xs: 12px;
+@font-en: 14px;
+@font-sm: 16px;
+@font-md: 22px;
+@font-lg: 28px;
+@pad-12: 12px;
+@w-100: 100%;
+
+.font-red {
+	color: #DA2D43;
+}
+
+.container {
+	padding: 0;
+	margin: 0
+}
+.news-matter{
+	margin-top: 101px;
+}
+.con_nav {
+	width: 100%;
+	margin: 30px 0;
+	padding: 0 160px;
+	font-size: @font-sm;
+	background: @bg-gray;
+	a {
+		display: inline-block;
+		padding: 20px 0;
+		color: #404040;
+	}
+	span.active {
+		display: inline-block;
+		padding: 20px 0;
+		color: #DC4A58;
+		border-bottom: 1px solid #DC4A58;
+	}
+}
+
+h3 {
+	font-size: 24px;
+	font-weight: bold;
+	padding-top: 50px;
+}
+p.line {
+	padding: 30px 0;
+	> span {
+		display: inline-block;
+		width: 30px;
+		border-bottom: 2px solid #7F7F7F;
+	}
+}
+.brand_info_a {
+	width: 100%;
+	padding: 80px 160px;
+	.info_2 {
+		padding: 0 80px;
+		div:first-child {
+			padding-top: 25px;
+		}
+		h3 {
+			font-size: 24px;
+			font-weight: bold;
+			padding-top: 50px;
+		}
+		p.line {
+			padding: 30px 0;
+			> span {
+				display: inline-block;
+				width: 30px;
+				border-bottom: 2px solid #7F7F7F;
+			}
+		}
+		p.detail_a {
+			line-height: 28px;
+			font-size: 14px;
+			padding-bottom: 20px;
+		}
+	}
+
+}
+.brand_info_b{
+	width: 100%;
+	padding: 60px 160px;
+	background-color: #fafafa;
+	.info_b2{
+		.detail_b{
+			line-height: 28px;
+			font-size: 14px;
+			padding-bottom: 20px;
+		}
+	}
+}
+.brand_info_c{
+	width: 100%;
+	padding: 60px 160px;
+	.row {
+		padding-top: 76px;
+		> div {
+			padding: 10px 20px 20px 10px;
+		}
+		.coo_box {
+			clear: both;
+			padding: 30px 0 0 0;
+			min-height: 274px;
+			-webkit-box-shadow: 5px 5px 30px 0px #ebebeb;
+			-moz-box-shadow: 5px 5px 30px 0px #ebebeb;
+			box-shadow: 5px 5px 30px 0px #ebebeb;
+			position: relative;
+			z-index: 20;
+			overflow: hidden;
+			.lf {
+				width: 108px;
+				height: 95px;
+				padding-top: 42px;
+				margin-top: 30px;
+				border-left: 6px solid #d7142e;
+				i {
+					float: right;
+					width: 66px;
+					height: 68px;
+					margin-top: -30px;
+					background: url("../img/pingtu.png") no-repeat  -1px -133px;
+				}
+			}
+			@media (max-width: 1300px) {
+				.lf {
+					width: 90px;
+				}
+			}
+			.rt {
+				width: 70%;
+				padding-right: 55px;
+				p.coo_title {
+					h3 {
+						width: 171px;
+					}
+				}
+				.line_font {
+					width: 64px;
+					border-bottom: 4px solid #999;
+					padding-top: 24px;
+					margin-bottom: 24px;
+				}
+				.coo_detail {
+					color: #7B7B7B;
+					font-size: 18px;
+					line-height: 32px;
+				}
+			}
+			@media (max-width: 765px) {
+				.rt {
+					float: left;
+					padding-left: 20px;
+					padding-right: 10px;
+				}
+			}
+			@media (max-width: 365px) {
+				.rt {
+					width: 100%;
+				}
+			}
+			@media (max-width: 1550px) and(min-width: 1170px) {
+				.rt {
+					padding-right: 10px;
+				}
+			}
+		}
+		> div >.coo_box> .lf i.brand_n2 {
+			background-position: -67px -133px;
+		}
+		> div >.coo_box> .lf i.brand_n3 {
+			background-position: -133px -134px;
+		}
+	}
+}
+.brand_info_d{
+	background: url(../img/brand_dbg.jpg) no-repeat;
+	width: 100%;
+	padding: 100px 300px;
+	color: #ffffff;
+	p.line{
+		span{
+			border-bottom-color: #ffffff;
+		}
+	}
+	p.detail_d{
+		line-height: 28px;
+		padding-bottom: 40px;
+	}
+	span.arrow_down img{
+		padding-bottom: 150px;
+	}
+}
+@media (max-width: 1599px) {
+	.con_nav {
+		padding: 0 50px;
+	}
+
+	.brand_info_a {
+		padding: 40px 50px;
+		.info_2 {
+			padding:0 15px;
+			div:first-child {
+				padding-top: 10px;
+			}
+			h3 {
+				padding-top: 20px;
+			}
+			p.line {
+				padding: 10px 0;
+				> span {
+					border-bottom: 2px solid #7F7F7F;
+				}
+			}
+			p.detail_a {
+				padding-bottom: 8px;
+			}
+		}
+	}
+	.brand_info_b,.brand_info_c ,.brand_info_d{
+		padding: 40px 50px;
+	}
+	.brand_info_d{
+		span.arrow_down img{
+			padding-bottom: 30px;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 768px) {
+	.con_nav {
+		padding: 0 10px;
+	}
+	.brand_info_a,.brand_info_b,.brand_info_c,.brand_info_d {
+		padding: 20px 10px;
+	}
+}

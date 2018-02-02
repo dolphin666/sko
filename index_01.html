@@ -24,27 +24,38 @@
     <title>SKOHOUSE</title>
 </head>
 <body>
- <!-- 首页右侧固定元素 -->
+<!-- 首页右侧固定元素 -->
+<li class="fi lia hover"><a href="http://wpa.qq.com/msgrd?v=3&uin=624264050&site=qq&menu=yes"
+                            target="_blank" class="tit">业务咨询</a></li>
+<li class="th lia hover"><a
+        href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzkzODAyNTk2Nl8yOTI4MzhfNDAwODAwNTc5MF8yXw"
+        target="_blank" class="tit">售后服务</a></li>
+<li class="se lia hover"><a href="http://www.hzboc.com/" target="_blank" class="tit">老官网</a></li>
+<li class="fif litel hover">
+    <p>咨询电话</p>
+    <div class="tel">135-8803-9685</div>
+</li>
 <div class="r_float">
-<div class="right_fixed yewu">
-<i></i> <br>
-<span>业务咨询</span>
+    <div class="right_fixed yewu lia hover">
+        <i></i> <br>
+        <span>业务咨询</span>
+    </div>
+    <div class="right_fixed shouhou lia hover">
+        <i></i> <br>
+        <span>售后服务</span>
+    </div>
+    <div class="right_fixed oldWeb lia hover">
+        <i></i> <br>
+        <span>老官网</span>
+    </div> hover
+    <div class="right_fixed litel tel hover">
+        <i></i> <br>
+        <span>咨询电话</span>
+        <span class="let_n"><b></b>&nbsp;135-8803-9685</span>
+    </div>
 </div>
-<div class="right_fixed shouhou">
-<i></i> <br>
-<span>售后服务</span>
-</div>
-<div class="right_fixed oldWeb">
-<i></i> <br>
-<span>老官网</span>
-</div>
-<div class="right_fixed tel">
-<i></i> <br>
-<span>咨询电话</span>
-</div>
-</div>
- <!-- header -->
-<header id="header" class="navbar navbar-default ">
+<!-- header -->
+<header id="header" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
             <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar"
@@ -54,7 +65,9 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="#" class="logo"></a>
+            <a href="#" class="logo">
+                <img src="img/logo-1.png" alt="">
+            </a>
         </div>
         <div id="bs-navbar" class="collapse navbar-collapse navbar-right">
             <p class="tel .rt nav navbar-nav navbar-right hidden-sm hidden-xs">
@@ -65,23 +78,60 @@
                 <li class="hidden-sm hidden-xs hidden-md">舒适休闲鞋引领者</li>
                 <li class="hidden-sm hidden-xs hidden-md">|</li>
                 <li class="active"><a href="">首页</a></li>
-                <li  class="sub-li"><a class="tit-a" href="">品牌</a></li>
+                <li class="sub-li">
+                    <a class="tit-a" href="">品牌</a>
+                    <div class="sub-nav">
+                        <div class="w1520">
+                            <dl class="brand_menu">
+                                <dd><a href="#">品牌简介</a><i></i></dd>
+                                <dd><a href="#">品牌诞生</a><i></i></dd>
+                                <dd><a href="#">创始人</a><i></i></dd>
+                                <dd><a href="#">品牌使命</a><i></i></dd>
+                                <dd><a href="#">品牌哲学</a><i></i></dd>
+                                <dd><a href="#">舒士人生</a><i></i></dd>
+                                <dd><a href="#">环保使命</a><i></i></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
                 <li class="sub-li">
                     <a class="tit-a" href="">新闻</a>
                     <div class="sub-nav">
                         <div class="w1520">
                             <dl>
-                                <dd><a href="#">公司简介</a><i></i></dd>
-                                <dd><a href="#">企业文化</a><i></i></dd>
-                                <dd><a href="#">发展历程</a><i></i></dd>
-                                <dd><a href="#">团队介绍</a><i></i></dd>
-                                <dd><a href="#">未来&愿景</a><i></i></dd>
+                                <dd><a href="#">品牌动态</a><i></i></dd>
+                                <dd><a href="#">行业资讯</a><i></i></dd>
+                                <dd><a href="#">媒体报道</a><i></i></dd>
                             </dl>
                         </div>
                     </div>
                 </li>
-                <li class="sub-li"><a class="tit-a" href="">店铺</a></li>
-                <li class="sub-li"><a class="tit-a" href="">加盟</a></li>
+                <li class="sub-li">
+                    <a class="tit-a" href="">店铺</a>
+                    <div class="sub-nav">
+                        <div class="w1520">
+                            <dl>
+                                <dd><a href="#">店铺展示</a><i></i></dd>
+                                <dd><a href="#">全球视野</a><i></i></dd>
+                                <dd><a href="#">全球店铺开发</a><i></i></dd>
+                                <dd><a href="#">中国店铺开发</a><i></i></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+                <li class="sub-li">
+                    <a class="tit-a" href="">加盟</a>
+                    <div class="sub-nav">
+                        <div class="w1520">
+                            <dl>
+                                <dd><a href="#">加盟优势</a><i></i></dd>
+                                <dd><a href="#">加盟条件</a><i></i></dd>
+                                <dd><a href="#">加盟政策</a><i></i></dd>
+                                <dd><a href="#">加盟申请</a><i></i></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
                 <li><a href="">联系</a></li>
                 <li class="hidden-sm hidden-xs hidden-md">|</li>
             </ul>
@@ -252,8 +302,8 @@
                 </div>
                 <div class="rt">
                     <p class="coo_title">
-                        <h3>整店输出</h3>
-                        <i class="arrow_rt"></i>
+                    <h3>整店输出</h3>
+                    <i class="arrow_rt"></i>
                     </p>
                     <p class="line_font"></p>
                     <p class="coo_detail">全程无忧开店，盈利有保障
@@ -549,23 +599,9 @@
 </footer>
 <script src="js/index.js"></script>
 <script>
-    var h = document.body.clientHeight;
-    var w = document.body.clientWidth;
-    /*$("#video").width(w);
-    $("#video").height(h);*/
-    /*var mySwiper = new Swiper ('.swiper-container', {
-        direction: 'horizontal',//滑动方向vertical 是垂直   horizontal是水平
-        loop: true,   //循环轮播
-
-
-        // 如果需要前进后退按钮
-        nextButton: '.xiayi',
-        prevButton: '.shangyi',
-
-    });*/
     var mySwiper = new Swiper('.swiper-container', {
         direction: 'horizontal',//滑动方向vertical 是垂直   horizontal是水平
-        autoplay:3000,
+        autoplay: 3000,
         loop: true,   //循环轮播
         pagination: '.swiper-pagination',
         paginationClickable: true
@@ -573,7 +609,7 @@
     });
     $(".swiper-container").mouseenter(function () {//滑过悬停
         mySwiper.stopAutoplay();//mySwiper 为上面你swiper实例化的名称
-    }).mouseleave(function(){//离开开启
+    }).mouseleave(function () {//离开开启
         mySwiper.startAutoplay();
     });
     var flaw = true;
@@ -597,6 +633,30 @@
             myvideo.play();
         else
             myvideo.pause();
+    })
+</script>
+<script>
+    $(function () {
+        // $(".return-webtop").on('click', function () {
+        //     $("body,html").stop().animate({scrollTop: 0}, 500);
+
+        $(".r_float div.litel").hover(function () {
+            var _this = $(this);
+            _this.removeClass("hover").stop().animate({left: -194}, 400)
+        }, function () {
+            var _this = $(this);
+            _this.stop().animate({left: 0}, 400, function () {
+                _this.addClass("hover")
+            })
+        })
+        $(".r_float div.lia").hover(function () {
+            $(this).removeClass("hover").stop().animate({left: -10}, 400)
+        }, function () {
+            var _this = $(this);
+            _this.stop().animate({left: 0}, 400, function () {
+                _this.addClass("hover")
+            })
+        })
     })
 </script>
 </body>

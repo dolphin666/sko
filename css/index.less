@@ -114,20 +114,23 @@ a:hover {
 	margin-bottom: -140px;
 	right: 0;
 	height: 280px;
-	width: 200px;
+	width: 80px;
 	z-index: 1000;
 	.right_fixed {
 		position: absolute;
-		right: 0;
-		width: 80px;
+		right: -20px;
+		width: 100px;
+		padding-right: 20px;
 		height: 60px;
 		line-height: 12px;
 		background: #c6162e;
 		text-align: center;
-		color: @font-white;
+		color: #fff;
+		cursor: pointer;
 		i {
 			display: inline-block;
 			width: 36px;
+
 			height: 36px;
 			background: url("../img/pingtu.png") no-repeat -260px 5px;
 		}
@@ -136,8 +139,26 @@ a:hover {
 			font-size: @font-xs;
 		}
 	}
-	.right_fixed:hover {
-		margin-left: -10px;
+	.litel{
+		left:0px;
+		width:295px;
+		padding-right: 215px;
+		.let_n{
+			position: absolute;
+			display: block;
+			top:0;
+			left:80px;
+			width:185px;
+			height: 60px;
+			line-height: 60px;
+			font-size: 24px;
+			b{
+				border-right: 1px solid #CDCDCD;
+			}
+		}
+	}
+	.hover {
+		overflow: hidden;
 	}
 	.yewu {
 		top: 0px;
@@ -146,19 +167,19 @@ a:hover {
 		}
 	}
 	.shouhou {
-		top: 70px;
+		top: 61px;
 		i {
 			background-position: -292px 5px;
 		}
 	}
 	.oldWeb {
-		top: 140px;
+		top: 122px;
 		i {
 			background-position: -328px 5px;
 		}
 	}
 	.tel {
-		top: 210px;
+		top: 183px;
 		i {
 			background-position: -364px 5px;
 		}
@@ -172,18 +193,18 @@ a:hover {
 	padding: 0;
 }
 
-#about_1, #about_2, #cooperate, #brand, #join, #news, #canal, #footer,#footer_02 {
+#about_1, #about_2, #cooperate, #brand, #join, #news, #canal, #footer, #footer_02 {
 	padding: 177px 160px;
 }
 
 @media (max-width: 1520px) {
-	#about_1, #about_2, #cooperate, #brand, #join, #news, #canal, #footer,#footer_02  {
+	#about_1, #about_2, #cooperate, #brand, #join, #news, #canal, #footer, #footer_02 {
 		padding: 50px 60px;
 	}
 }
 
 @media (max-width: 748px) {
-	#about_1, #about_2, #cooperate, #brand, #join, #news, #canal, #footer,#footer_02  {
+	#about_1, #about_2, #cooperate, #brand, #join, #news, #canal, #footer, #footer_02 {
 		padding: 30px 20px;
 	}
 }
@@ -209,21 +230,26 @@ body {
 		width: 100%;
 		padding: 0;
 	}
-	.logo {
-		float: left;
-		width: 218px;
-		height: 53px;
-		background: url("../img/pingtu.png") no-repeat;
+	//.logo {
+	//	float: left;
+	//	width: 218px;
+	//	height: 53px;
+	//	background: url("../img/pingtu.png") no-repeat;
+	//}
+	@media (max-width: 480px) {
+		.logo img {
+			height: 50px;
+		}
 	}
-	ul{
-		li{
-			>a {
+	ul {
+		li {
+			> a {
 				background-color: #fff;
 				padding: 10px 20px;
 			}
 		}
 	}
-	.sub-nav{
+	.sub-nav {
 		position: fixed;
 		top: 100px;
 		left: 0;
@@ -234,22 +260,22 @@ body {
 		border-top: 1px solid #ddd;
 		border-bottom: 1px solid #ddd;
 		display: none;
-		dl{
+		dl {
 			float: right;
 			width: 736px;
 		}
-		dd{
+		dd {
 			margin-right: 60px;
 			font-size: 14px;
 			line-height: 47px;
-			padding-top: 4px;
+			padding-top: 2px;
 			position: relative;
 			float: left;
-			a{
+			a {
 				display: inline-block;
 				color: #777;
 			}
-			i{
+			i {
 				display: block;
 				width: 0;
 				position: absolute;
@@ -259,18 +285,23 @@ body {
 				background-color: #333;
 			}
 		}
-		dd:hover a{
+		dl.brand_menu {
+			dd {
+				margin-right: 30px;
+			}
+		}
+		dd:hover a {
 			color: #333;
 		}
-		dd:hover i{
+		dd:hover i {
 			left: 0;
 			width: 100%;
 			transition: all 0.4s ease 0s;
 		}
-		dd.hover a{
+		dd.hover a {
 			color: #333;
 		}
-		dd.hover i{
+		dd.hover i {
 			left: 0;
 			width: 100%;
 		}
@@ -279,8 +310,6 @@ body {
 		}
 	}
 }
-
-
 
 #bs-navbar {
 	color: #292929;
@@ -331,6 +360,7 @@ body {
 #banner {
 	position: relative;
 	width: 100%;
+	margin-top:101px;
 }
 
 .aa {
@@ -796,9 +826,9 @@ a.read-more {
 					background: rgba(255, 255, 255, 0);
 				}
 			}
-			@media (max-width:768px){
-				p{
-					width:240px;
+			@media (max-width: 768px) {
+				p {
+					width: 240px;
 					height: 40px;
 					border-radius: 20px;
 					font-size: 14px;
@@ -931,100 +961,102 @@ a.read-more {
 				float: right;
 			}
 		}
-		.Wechat_m{
+		.Wechat_m {
 			display: inline-block;
 			width: 90px;
 			height: 90px;
 			background: url("../img/pingtu.png") no-repeat -219px -70px;
 		}
-		.weibo,.mail{
+		.weibo, .mail {
 			display: inline-block;
 			margin-left: 10px;
 			width: 36px;
 			height: 36px;
 			background: url("../img/pingtu.png") no-repeat -260px -34px;
 		}
-		.mail{
+		.mail {
 			background-position: -296px -34px;
 		}
-		button{
+		button {
 			width: 120px;
 			height: 36px;
 			border: 1px solid #E3E3E3;
 			background: #fff;
 			margin-bottom: 12px;
-			i{
+			i {
 				display: inline-block;
 				width: 20px;
 				height: 20px;
 				background: url("../img/pingtu.png") no-repeat -460px 0;
 			}
-			i.shouhou_btn{
+			i.shouhou_btn {
 				background-position: -479px 0;
 			}
 		}
 	}
-	@media (max-width:1200px){
-		.row{padding: 0;}
+	@media (max-width: 1200px) {
+		.row {
+			padding: 0;
+		}
 	}
-	@media (max-width:765px){
-		.row{
-			>div{
-				padding:0;
+	@media (max-width: 765px) {
+		.row {
+			> div {
+				padding: 0;
 			}
 		}
 	}
 }
 
 /* footer_02 */
-#footer_02{
+#footer_02 {
 	padding: 85px 160px;
-	@media (max-width:1200px){
-		padding:35px 60px 80px;
+	@media (max-width: 1200px) {
+		padding: 35px 60px 80px;
 	}
-	@media (max-width:675px){
-		padding:35px 5px 80px;
+	@media (max-width: 675px) {
+		padding: 35px 5px 80px;
 	}
 	background: #111;
 	color: #ffffff;
-	.row{
+	.row {
 		border-bottom: 1px solid #303030;
 		padding-bottom: 50px;
 	}
-	ul{
+	ul {
 		display: inline-block;
-		li{
+		li {
 			height: 14px;
 			margin-bottom: 20px;
 			border-right: 1px solid #aaa;
 			float: left;
-			a{
+			a {
 				font-size: 14px;
 				padding: 0 35px;
 				line-height: 0;
 			}
 		}
-		li:last-child,li:nth-child(5){
-			border:none;
+		li:last-child, li:nth-child(5) {
+			border: none;
 			color: #838383;
 		}
-		li:nth-child(6){
+		li:nth-child(6) {
 			margin-left: 40px;
 		}
 	}
-	ul+span{
+	ul + span {
 		margin-left: 55px;
 	}
-	div.serch{
-		input{
+	div.serch {
+		input {
 			display: block;
 			float: left;
-			height:30px;
+			height: 30px;
 			background: #000;
 			border: 1px solid #fff;
 			padding: 0 5px;
 		}
-		button{
+		button {
 			display: block;
 			float: left;
 			width: 30px;
@@ -1032,27 +1064,27 @@ a.read-more {
 			border: none;
 			background: url("../img/search_03.png") no-repeat;
 		}
-		span{
+		span {
 			padding-left: 15px;
 			display: inline-block;
 			width: 100px;
 			margin-top: 15px;
 		}
 	}
-	.foot2_con{
+	.foot2_con {
 		margin-top: 40px;
 		height: 20px;
 		line-height: 20px;
-		span{
+		span {
 			padding: 10px;
 		}
-		.logo_sm{
+		.logo_sm {
 			display: inline-block;
 			width: 110px;
 			height: 20px;
 			background: url("../img/logo_sm.png") no-repeat 0 7px;
 		}
-		.jing{
+		.jing {
 			display: inline-block;
 			width: 20px;
 			height: 20px;

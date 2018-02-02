@@ -105,18 +105,20 @@ a:hover {
   margin-bottom: -140px;
   right: 0;
   height: 280px;
-  width: 200px;
+  width: 80px;
   z-index: 1000;
 }
 .r_float .right_fixed {
   position: absolute;
-  right: 0;
-  width: 80px;
+  right: -20px;
+  width: 100px;
+  padding-right: 20px;
   height: 60px;
   line-height: 12px;
   background: #c6162e;
   text-align: center;
   color: #fff;
+  cursor: pointer;
 }
 .r_float .right_fixed i {
   display: inline-block;
@@ -128,8 +130,26 @@ a:hover {
   display: inline-block;
   font-size: 12px;
 }
-.r_float .right_fixed:hover {
-  margin-left: -10px;
+.r_float .litel {
+  left: 0px;
+  width: 295px;
+  padding-right: 215px;
+}
+.r_float .litel .let_n {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 80px;
+  width: 185px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 24px;
+}
+.r_float .litel .let_n b {
+  border-right: 1px solid #CDCDCD;
+}
+.r_float .hover {
+  overflow: hidden;
 }
 .r_float .yewu {
   top: 0px;
@@ -138,19 +158,19 @@ a:hover {
   background-position: -258px 5px;
 }
 .r_float .shouhou {
-  top: 70px;
+  top: 61px;
 }
 .r_float .shouhou i {
   background-position: -292px 5px;
 }
 .r_float .oldWeb {
-  top: 140px;
+  top: 122px;
 }
 .r_float .oldWeb i {
   background-position: -328px 5px;
 }
 .r_float .tel {
-  top: 210px;
+  top: 183px;
 }
 .r_float .tel i {
   background-position: -364px 5px;
@@ -234,11 +254,10 @@ body {
   width: 100%;
   padding: 0;
 }
-#header .logo {
-  float: left;
-  width: 218px;
-  height: 53px;
-  background: url("../img/pingtu.png") no-repeat;
+@media (max-width: 480px) {
+  #header .logo img {
+    height: 50px;
+  }
 }
 #header ul li > a {
   background-color: #fff;
@@ -264,7 +283,7 @@ body {
   margin-right: 60px;
   font-size: 14px;
   line-height: 47px;
-  padding-top: 4px;
+  padding-top: 2px;
   position: relative;
   float: left;
 }
@@ -280,6 +299,9 @@ body {
   bottom: 0;
   height: 3px;
   background-color: #333;
+}
+#header .sub-nav dl.brand_menu dd {
+  margin-right: 30px;
 }
 #header .sub-nav dd:hover a {
   color: #333;
@@ -344,6 +366,7 @@ body {
 #banner {
   position: relative;
   width: 100%;
+  margin-top: 101px;
 }
 .aa {
   width: 100%;
