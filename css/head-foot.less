@@ -123,6 +123,85 @@ a:hover {
 @pad-12: 12px;
 @w-100: 100%;
 
+/******  首页右侧固定元素 ******/
+.r_float {
+	position: fixed;
+	bottom: 50%;
+	margin-bottom: -140px;
+	right: 0;
+	height: 280px;
+	width: 80px;
+	z-index: 1000;
+	.right_fixed {
+		position: absolute;
+		right: -20px;
+		width: 100px;
+		padding-right: 20px;
+		height: 60px;
+		line-height: 12px;
+		background: #c6162e;
+		text-align: center;
+		color: #fff;
+		cursor: pointer;
+		i {
+			display: inline-block;
+			width: 36px;
+
+			height: 36px;
+			background: url("../img/pingtu.png") no-repeat -260px 5px;
+		}
+		span {
+			display: inline-block;;
+			font-size: @font-xs;
+		}
+	}
+	.litel{
+		left:0px;
+		width:295px;
+		padding-right: 215px;
+		.let_n{
+			position: absolute;
+			display: block;
+			top:0;
+			left:80px;
+			width:185px;
+			height: 60px;
+			line-height: 60px;
+			font-size: 24px;
+			b{
+				border-right: 1px solid #CDCDCD;
+			}
+		}
+	}
+	.hover {
+		overflow: hidden;
+	}
+	.yewu {
+		top: 0px;
+		i {
+			background-position: -258px 5px;
+		}
+	}
+	.shouhou {
+		top: 61px;
+		i {
+			background-position: -292px 5px;
+		}
+	}
+	.oldWeb {
+		top: 122px;
+		i {
+			background-position: -328px 5px;
+		}
+	}
+	.tel {
+		top: 183px;
+		i {
+			background-position: -364px 5px;
+		}
+	}
+}
+
 @media (min-width: 749px) {
 	.container {
 		width: @w-100;
@@ -206,6 +285,7 @@ body {
 		dl {
 			float: right;
 			width: 736px;
+			margin-right:-50px;
 		}
 		dd {
 			margin-right: 60px;
@@ -227,6 +307,9 @@ body {
 				height: 3px;
 				background-color: #333;
 			}
+		}
+		dl.brand_menu dd{
+			margin-right:30px;
 		}
 		dd:hover a {
 			color: #333;
@@ -292,6 +375,168 @@ body {
 			color: @font-red;
 		}
 	}
+}
+
+/* 手机头部 */
+.clear {
+	clear: both; }
+
+.f-cb {
+	zoom: 1; }
+
+.f-cb:after {
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	overflow: hidden;
+	content: "."; }
+
+.fl {
+	float: left;
+	display: inline; }
+
+.fr {
+	float: right;
+	display: inline; }
+
+.left{
+	transform: translateX(-66%);
+	transition: all 0.44s ease 0s;
+}
+.m-sub-menu.show {
+	right: 0;
+	transition: all 0.44s ease 0s;
+}
+
+.m-sub-menu {
+	position: fixed;
+	right: -100%;
+	width: 66%;
+	top: 0;
+	z-index: 100;
+	height: 100%;
+	background-color: #fff;
+	transition: all 0.64s ease 0s;
+}
+.m-sub-menu .top-box {
+	line-height: 60px;
+	background-color: #333;
+}
+.m-sub-menu .top-box .stt {
+	display: inline-block;
+	font-size: 16px;
+	color: #acacac;
+	margin-left: 8.2%;
+	font-family: "Base-font";
+}
+.m-sub-menu .top-box .close {
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: url(../img/ico_37.png) no-repeat center;
+	margin-right: 7.8%;
+	margin-top: 22px;
+	cursor: pointer;
+}
+.m-sub-menu .list-wrap ul {
+	width: 100%;
+}
+.m-sub-menu .list-wrap li {
+	line-height: 60px;
+	width: 100%;
+	border-bottom: 1px solid #f2f2f2;
+}
+.m-sub-menu .list-wrap li .col-box {
+	display: block;
+	width: 84%;
+	padding: 0 7.8% 0 8.2%;
+}
+.m-sub-menu .list-wrap .tit {
+	font-size: 16px;
+	color: #666;
+}
+.m-sub-menu .list-wrap .point {
+	display: inline-block;
+	width: 8px;
+	height: 12px;
+	background: url(../img/ico_38.png) no-repeat center;
+	margin-top: 26px;
+}
+.m-sub-menu .bot-link {
+	width: 84%;
+	padding: 0 7.8% 0 8.2%;
+	margin-top: 30px;
+}
+.m-sub-menu .bot-link a {
+	display: inline-block;
+	width: 36px;
+	height: 50px;
+	margin-right: 20px;
+	float: left;
+}
+.m-sub-menu .sec-sub-list {
+	position: absolute;
+	right: -100%;
+	top: 60px;
+	width: 100%;
+}
+.m-sub-menu .sec-sub-list .return-fir {
+	display: block;
+	width: 84%;
+	padding: 0 7.8% 0 8.2%;
+	line-height: 60px;
+	background-color: #333;
+}
+.m-sub-menu .sec-sub-list .return-fir p {
+	padding-left: 18px;
+	color: #fff;
+	font-size: 18px;
+	background: url(../img/ico_42.png) no-repeat left center;
+}
+.m-sub-menu .sec-sub-list .boxs {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: all 0.4s ease 0s;
+	background-color: #fff;
+	li.lixi{
+		display: inline-block;
+		vertical-align: middle;
+		padding-left: 20px;
+		font-size: 24px;
+		color: #C5152D;
+		font-weight: normal;
+		i {
+			display: inline-block;
+			width: 25px;
+			height: 25px;
+			margin-top: -6px;
+			vertical-align: middle;
+			background: url(../img/pingtu.png) no-repeat -233px 0;
+		}
+	}
+}
+.m-sub-menu .sec-sub-list .boxs.show {
+	left: -100%;
+}
+.m-sub-menu .sec-sub-list ul, .m-sub-menu .sec-sub-list li {
+	width: 100%;
+}
+.m-sub-menu .sec-sub-list li {
+	line-height: 60px;
+	border-bottom: 1px solid #f2f2f2;
+}
+.m-sub-menu .sec-sub-list li a {
+	display: block;
+	width: 84%;
+	padding: 0 7.8% 0 8.2%;
+	font-size: 16px;
+	color: #666;
+}
+.m-sub-menu .sec-sub-list .bot-link {
+	margin-top: 14px;
 }
 
 /* footer */
