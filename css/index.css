@@ -230,307 +230,319 @@ a:hover {
 body {
   background: #fff;
 }
-#header {
-  background-color: #fff;
-  padding: 20px 140px 20px 160px;
-  border: none;
-}
-@media (max-width: 1420px) {
-  #header {
-    padding: 20px 60px;
-  }
-}
-@media (max-width: 1240px) {
-  #header {
-    padding: 20px 40px;
-  }
-}
-@media (max-width: 780px) {
-  #header {
-    padding: 20px 20px;
-  }
-}
-#header > .container-fluid {
-  width: 100%;
-  padding: 0;
-}
-@media (max-width: 480px) {
-  #header .logo img {
-    height: 50px;
-  }
-}
-#header ul li > a {
-  background-color: #fff;
-  padding: 10px 20px;
-}
-#header .sub-nav {
-  position: fixed;
-  top: 100px;
-  left: 0;
-  width: 100%;
-  background-color: #fff;
-  height: 50px;
-  z-index: 2;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  display: none;
-}
-#header .sub-nav dl {
-  float: right;
-  width: 736px;
-  margin-right: -50px;
-}
-#header .sub-nav dd {
-  margin-right: 60px;
-  font-size: 14px;
-  line-height: 50px;
-  position: relative;
-  float: left;
-}
-#header .sub-nav dd a {
-  display: inline-block;
-  color: #777;
-}
-#header .sub-nav dd i {
-  display: block;
-  width: 0;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  height: 3px;
-  background-color: #333;
-}
-#header .sub-nav dl.brand_menu dd {
-  margin-right: 30px;
-}
-#header .sub-nav dd:hover a {
-  color: #333;
-}
-#header .sub-nav dd:hover i {
-  left: 0;
-  width: 100%;
-  transition: all 0.4s ease 0s;
-}
-#header .sub-nav dd.hover a {
-  color: #333;
-}
-#header .sub-nav dd.hover i {
-  left: 0;
-  width: 100%;
-}
-#header .sub-nav li.cur a.tit-a {
-  color: #888;
-}
-@media (max-width: 768px) {
-  #header #bs-navbar {
-    display: none;
-  }
-}
+/* header */
+/*#header {
+	background-color: #fff;
+	padding: 20px 140px 20px 160px;
+	border: none;
+	@media (max-width: 1420px) {
+		padding: 20px 60px;
+	}
+	@media (max-width: 1240px) {
+		padding: 20px 40px;
+	}
+	@media (max-width: 780px) {
+		padding: 20px 20px;
+	}
+	> .container-fluid {
+		width: 100%;
+		padding: 0;
+	}
+	//.logo {
+	//	float: left;
+	//	width: 218px;
+	//	height: 53px;
+	//	background: url("../img/pingtu.png") no-repeat;
+	//}
+	@media (max-width: 480px) {
+		.logo img {
+			height: 50px;
+		}
+	}
+	ul {
+		li {
+			> a {
+				background-color: #fff;
+				padding: 10px 20px;
+			}
+		}
+	}
+	.sub-nav {
+		position: fixed;
+		top: 100px;
+		left: 0;
+		width: 100%;
+		background-color: #fff;
+		height: 50px;
+		z-index: 2;
+		border-top: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
+		display: none;
+		dl {
+			float: right;
+			width: 736px;
+			margin-right: -50px;
+		}
+		dd {
+			margin-right: 60px;
+			font-size: 14px;
+			line-height: 50px;
+			//padding-top: 2px;
+			position: relative;
+			float: left;
+			a {
+				display: inline-block;
+				color: #777;
+			}
+			i {
+				display: block;
+				width: 0;
+				position: absolute;
+				left: 50%;
+				bottom: 0;
+				height: 3px;
+				background-color: #333;
+			}
+		}
+		dl.brand_menu {
+			dd {
+				margin-right: 30px;
+			}
+		}
+		dd:hover a {
+			color: #333;
+		}
+		dd:hover i {
+			left: 0;
+			width: 100%;
+			transition: all 0.4s ease 0s;
+		}
+		dd.hover a {
+			color: #333;
+		}
+		dd.hover i {
+			left: 0;
+			width: 100%;
+		}
+		li.cur a.tit-a {
+			color: #888;
+		}
+	}
+	@media (max-width:768px){
+		#bs-navbar{
+			display: none;
+		}
+	}
+}*/
 .ovh {
   overflow: hidden;
 }
-#bs-navbar {
-  color: #292929;
-  font-size: 14px;
-  font-weight: bold;
-  margin-top: 6px;
+/*#bs-navbar {
+	color: #292929;
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 6px;
+	a {
+		color: #292929;
+	}
+	p {
+		height: 52px;
+		margin-top: 3px;
+		i {
+			display: inline-block;
+			width: 25px;
+			height: 25px;
+			vertical-align: middle;
+			background: url("../img/pingtu.png") no-repeat -233px 0;
+		}
+		span {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 24px;
+			color: @font-red;
+			font-weight: normal;
+		}
+	}
+
+	ul {
+		li:first-child {
+			padding: 10px 19px;
+		}
+		li:nth-child(2) {
+			padding: 10px 14px;
+			color: #CDCDCD;
+		}
+		li:last-child {
+			padding: 10px 30px 10px 15px;
+			color: #aaa;
+		}
+		li.active a {
+			color: @font-red;
+		}
+	}
+}*/
+/* 移动端头部 */
+/*.clear {
+	clear: both;
 }
-#bs-navbar a {
-  color: #292929;
-}
-#bs-navbar p {
-  height: 52px;
-  margin-top: 3px;
-}
-#bs-navbar p i {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  vertical-align: middle;
-  background: url("../img/pingtu.png") no-repeat -233px 0;
-}
-#bs-navbar p span {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 24px;
-  color: #C5152D;
-  font-weight: normal;
-}
-#bs-navbar ul li:first-child {
-  padding: 10px 19px;
-}
-#bs-navbar ul li:nth-child(2) {
-  padding: 10px 14px;
-  color: #CDCDCD;
-}
-#bs-navbar ul li:last-child {
-  padding: 10px 30px 10px 15px;
-  color: #aaa;
-}
-#bs-navbar ul li.active a {
-  color: #C5152D;
-}
-/* 手机头部 */
-.clear {
-  clear: both;
-}
+
 .f-cb {
-  zoom: 1;
-}
+	zoom: 1; }
+
 .f-cb:after {
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-  overflow: hidden;
-  content: ".";
-}
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	overflow: hidden;
+	content: "."; }
+
 .fl {
-  float: left;
-  display: inline;
-}
+	float: left;
+	display: inline; }
+
 .fr {
-  float: right;
-  display: inline;
-}
-.left {
-  transform: translateX(-66%);
-  transition: all 0.44s ease 0s;
+	float: right;
+	display: inline; }
+
+.left{
+	transform: translateX(-66%);
+	transition: all 0.44s ease 0s;
 }
 .m-sub-menu.show {
-  right: 0;
-  transition: all 0.44s ease 0s;
+	right: 0;
+	transition: all 0.44s ease 0s;
 }
+
 .m-sub-menu {
-  position: fixed;
-  right: -100%;
-  width: 66%;
-  top: 0;
-  z-index: 100;
-  height: 100%;
-  background-color: #fff;
-  transition: all 0.64s ease 0s;
+	position: fixed;
+	right: -100%;
+	width: 66%;
+	top: 0;
+	z-index: 100;
+	height: 100%;
+	background-color: #fff;
+	transition: all 0.64s ease 0s;
 }
 .m-sub-menu .top-box {
-  line-height: 60px;
-  background-color: #333;
+	line-height: 60px;
+	background-color: #333;
 }
 .m-sub-menu .top-box .stt {
-  display: inline-block;
-  font-size: 16px;
-  color: #acacac;
-  margin-left: 8.2%;
-  font-family: "Base-font";
+	display: inline-block;
+	font-size: 16px;
+	color: #acacac;
+	margin-left: 8.2%;
+	font-family: "Base-font";
 }
 .m-sub-menu .top-box .close {
-  display: inline-block;
-  width: 17px;
-  height: 17px;
-  background: url(../img/ico_37.png) no-repeat center;
-  margin-right: 7.8%;
-  margin-top: 22px;
-  cursor: pointer;
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: url(../img/ico_37.png) no-repeat center;
+	margin-right: 7.8%;
+	margin-top: 22px;
+	cursor: pointer;
 }
 .m-sub-menu .list-wrap ul {
-  width: 100%;
+	width: 100%;
 }
 .m-sub-menu .list-wrap li {
-  line-height: 60px;
-  width: 100%;
-  border-bottom: 1px solid #f2f2f2;
+	line-height: 60px;
+	width: 100%;
+	border-bottom: 1px solid #f2f2f2;
 }
 .m-sub-menu .list-wrap li .col-box {
-  display: block;
-  width: 84%;
-  padding: 0 7.8% 0 8.2%;
+	display: block;
+	width: 84%;
+	padding: 0 7.8% 0 8.2%;
 }
 .m-sub-menu .list-wrap .tit {
-  font-size: 16px;
-  color: #666;
+	font-size: 16px;
+	color: #666;
 }
 .m-sub-menu .list-wrap .point {
-  display: inline-block;
-  width: 8px;
-  height: 12px;
-  background: url(../img/ico_38.png) no-repeat center;
-  margin-top: 26px;
+	display: inline-block;
+	width: 8px;
+	height: 12px;
+	background: url(../img/ico_38.png) no-repeat center;
+	margin-top: 26px;
 }
 .m-sub-menu .bot-link {
-  width: 84%;
-  padding: 0 7.8% 0 8.2%;
-  margin-top: 30px;
+	width: 84%;
+	padding: 0 7.8% 0 8.2%;
+	margin-top: 30px;
 }
 .m-sub-menu .bot-link a {
-  display: inline-block;
-  width: 36px;
-  height: 50px;
-  margin-right: 20px;
-  float: left;
+	display: inline-block;
+	width: 36px;
+	height: 50px;
+	margin-right: 20px;
+	float: left;
 }
 .m-sub-menu .sec-sub-list {
-  position: absolute;
-  right: -100%;
-  top: 60px;
-  width: 100%;
+	position: absolute;
+	right: -100%;
+	top: 60px;
+	width: 100%;
 }
 .m-sub-menu .sec-sub-list .return-fir {
-  display: block;
-  width: 84%;
-  padding: 0 7.8% 0 8.2%;
-  line-height: 60px;
-  background-color: #333;
+	display: block;
+	width: 84%;
+	padding: 0 7.8% 0 8.2%;
+	line-height: 60px;
+	background-color: #333;
 }
 .m-sub-menu .sec-sub-list .return-fir p {
-  padding-left: 18px;
-  color: #fff;
-  font-size: 18px;
-  background: url(../img/ico_42.png) no-repeat left center;
+	padding-left: 18px;
+	color: #fff;
+	font-size: 18px;
+	background: url(../img/ico_42.png) no-repeat left center;
 }
 .m-sub-menu .sec-sub-list .boxs {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  transition: all 0.4s ease 0s;
-  background-color: #fff;
-}
-.m-sub-menu .sec-sub-list .boxs li.lixi {
-  display: inline-block;
-  vertical-align: middle;
-  padding-left: 20px;
-  font-size: 24px;
-  color: #C5152D;
-  font-weight: normal;
-}
-.m-sub-menu .sec-sub-list .boxs li.lixi i {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  margin-top: -6px;
-  vertical-align: middle;
-  background: url(../img/pingtu.png) no-repeat -233px 0;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: all 0.4s ease 0s;
+	background-color: #fff;
+	li.lixi{
+		display: inline-block;
+		vertical-align: middle;
+		padding-left: 20px;
+		font-size: 24px;
+		color: #C5152D;
+		font-weight: normal;
+		i {
+			display: inline-block;
+			width: 25px;
+			height: 25px;
+			margin-top: -6px;
+			vertical-align: middle;
+			background: url(../img/pingtu.png) no-repeat -233px 0;
+		}
+	}
 }
 .m-sub-menu .sec-sub-list .boxs.show {
-  left: -100%;
+	left: -100%;
 }
-.m-sub-menu .sec-sub-list ul,
-.m-sub-menu .sec-sub-list li {
-  width: 100%;
+.m-sub-menu .sec-sub-list ul, .m-sub-menu .sec-sub-list li {
+	width: 100%;
 }
 .m-sub-menu .sec-sub-list li {
-  line-height: 60px;
-  border-bottom: 1px solid #f2f2f2;
+	line-height: 60px;
+	border-bottom: 1px solid #f2f2f2;
 }
 .m-sub-menu .sec-sub-list li a {
-  display: block;
-  width: 84%;
-  padding: 0 7.8% 0 8.2%;
-  font-size: 16px;
-  color: #666;
+	display: block;
+	width: 84%;
+	padding: 0 7.8% 0 8.2%;
+	font-size: 16px;
+	color: #666;
 }
 .m-sub-menu .sec-sub-list .bot-link {
-  margin-top: 14px;
-}
+	margin-top: 14px;
+}*/
 /* 手机头部end */
 /******* 轮播图banner *******/
 #banner {
@@ -855,10 +867,10 @@ a.read-more > span {
 }
 #cooperate .row .coo_box .lf i {
   float: right;
-  width: 68px;
+  width: 66px;
   height: 68px;
   margin-top: -30px;
-  background: url("../img/pingtu.png") no-repeat 1px -65px;
+  background: url("../img/pingtu.png") no-repeat -1px -65px;
 }
 @media (max-width: 1300px) {
   #cooperate .row .coo_box .lf {
@@ -899,11 +911,11 @@ a.read-more > span {
     padding-right: 10px;
   }
 }
-#cooperate .row > div:nth-child(2) > .lf i {
+#cooperate .row > div:nth-child(2) > .coo_box > .lf i {
   background-position: -67px -65px;
 }
-#cooperate .row > div:nth-child(3) > .lf i {
-  background-position: -132px -65px;
+#cooperate .row > div:nth-child(3) > .coo_box > .lf i {
+  background-position: -133px -65px;
 }
 /* 品牌 brand */
 #brand .brand_bot .row {
@@ -1082,166 +1094,166 @@ a.read-more > span {
   }
 }
 /* footer */
-#footer {
-  Padding-top: 45px;
-  padding-bottom: 40px;
-  font-size: 12px;
-}
-#footer .row {
-  padding: 0 90px;
-}
-#footer .row > div {
-  padding: 0 80px;
-  margin-bottom: 20px;
-}
-#footer .row .foot_list_tit {
-  width: 100%;
-  height: 44px;
-  font-size: 14px;
-  margin-bottom: 20px;
-  line-height: 20px;
-  border-bottom: 1px solid #D4D4D4;
-}
-#footer .row .foot_list_tit span {
-  display: inline-block;
-  float: left;
-}
-#footer .row .foot_list_tit span i {
-  display: inline-block;
-  width: 27px;
-  height: 21px;
-  background: url("../img/pingtu.png") no-repeat -371px -78px;
-}
-#footer .row .foot_list_tit span.contact_more {
-  float: right;
-}
-#footer .row .Wechat_m {
-  display: inline-block;
-  width: 90px;
-  height: 90px;
-  background: url("../img/pingtu.png") no-repeat -219px -70px;
-}
-#footer .row .weibo,
-#footer .row .mail {
-  display: inline-block;
-  margin-left: 10px;
-  width: 36px;
-  height: 36px;
-  background: url("../img/pingtu.png") no-repeat -260px -34px;
-}
-#footer .row .mail {
-  background-position: -296px -34px;
-}
-#footer .row button {
-  width: 120px;
-  height: 36px;
-  border: 1px solid #E3E3E3;
-  background: #fff;
-  margin-bottom: 12px;
-}
-#footer .row button i {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: url("../img/pingtu.png") no-repeat -460px 0;
-}
-#footer .row button i.shouhou_btn {
-  background-position: -479px 0;
-}
-@media (max-width: 1200px) {
-  #footer .row {
-    padding: 0;
-  }
-}
-@media (max-width: 765px) {
-  #footer .row > div {
-    padding: 0;
-  }
-}
+/*#footer {
+	Padding-top: 45px;
+	padding-bottom: 40px;
+	font-size: 12px;
+	background: #fafafa;
+	.row {
+		padding: 0 90px;
+		> div {
+			padding: 0 80px;
+			margin-bottom: 20px;
+		}
+		.foot_list_tit {
+			width: 100%;
+			height: 44px;
+			font-size: 14px;
+			margin-bottom: 20px;
+			line-height: 20px;
+			border-bottom: 1px solid #D4D4D4;
+			span {
+				display: inline-block;
+				float: left;
+				i {
+					display: inline-block;
+					width: 27px;
+					height: 21px;
+					background: url("../img/pingtu.png") no-repeat -371px -78px;
+				}
+			}
+			span.contact_more {
+				float: right;
+			}
+		}
+		.Wechat_m {
+			display: inline-block;
+			width: 90px;
+			height: 90px;
+			background: url("../img/pingtu.png") no-repeat -219px -70px;
+		}
+		.weibo, .mail {
+			display: inline-block;
+			margin-left: 10px;
+			width: 36px;
+			height: 36px;
+			background: url("../img/pingtu.png") no-repeat -260px -34px;
+		}
+		.mail {
+			background-position: -296px -34px;
+		}
+		button {
+			width: 120px;
+			height: 36px;
+			border: 1px solid #E3E3E3;
+			background: #fff;
+			margin-bottom: 12px;
+			i {
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				background: url("../img/pingtu.png") no-repeat -460px 0;
+			}
+			i.shouhou_btn {
+				background-position: -479px 0;
+			}
+		}
+	}
+	@media (max-width: 1200px) {
+		.row {
+			padding: 0;
+		}
+	}
+	@media (max-width: 765px) {
+		.row {
+			> div {
+				padding: 0;
+			}
+		}
+	}
+}*/
 /* footer_02 */
+/*
 #footer_02 {
-  padding: 85px 160px;
-  background: #111;
-  color: #ffffff;
-}
-@media (max-width: 1200px) {
-  #footer_02 {
-    padding: 35px 60px 80px;
-  }
-}
-@media (max-width: 675px) {
-  #footer_02 {
-    padding: 35px 5px 80px;
-  }
-}
-#footer_02 .row {
-  border-bottom: 1px solid #303030;
-  padding-bottom: 50px;
-}
-#footer_02 ul {
-  display: inline-block;
-}
-#footer_02 ul li {
-  height: 14px;
-  margin-bottom: 20px;
-  border-right: 1px solid #aaa;
-  float: left;
-}
-#footer_02 ul li a {
-  font-size: 14px;
-  padding: 0 35px;
-  line-height: 0;
-}
-#footer_02 ul li:last-child,
-#footer_02 ul li:nth-child(5) {
-  border: none;
-  color: #838383;
-}
-#footer_02 ul li:nth-child(6) {
-  margin-left: 40px;
-}
-#footer_02 ul + span {
-  margin-left: 55px;
-}
-#footer_02 div.serch input {
-  display: block;
-  float: left;
-  height: 30px;
-  background: #000;
-  border: 1px solid #fff;
-  padding: 0 5px;
-}
-#footer_02 div.serch button {
-  display: block;
-  float: left;
-  width: 30px;
-  height: 30px;
-  border: none;
-  background: url("../img/search_03.png") no-repeat;
-}
-#footer_02 div.serch span {
-  padding-left: 15px;
-  display: inline-block;
-  width: 100px;
-  margin-top: 15px;
-}
-#footer_02 .foot2_con {
-  margin-top: 40px;
-  height: 20px;
-  line-height: 20px;
-}
-#footer_02 .foot2_con span {
-  padding: 10px;
-}
-#footer_02 .foot2_con .logo_sm {
-  display: inline-block;
-  width: 110px;
-  height: 20px;
-  background: url("../img/logo_sm.png") no-repeat 0 7px;
-}
-#footer_02 .foot2_con .jing {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: url("../img/pingtu.png") no-repeat -449px -31px;
-}
+	padding: 85px 160px;
+	@media (max-width: 1200px) {
+		padding: 35px 60px 80px;
+	}
+	@media (max-width: 675px) {
+		padding: 35px 5px 80px;
+	}
+	background: #111;
+	color: #ffffff;
+	.row {
+		border-bottom: 1px solid #303030;
+		padding-bottom: 50px;
+	}
+	ul {
+		display: inline-block;
+		li {
+			height: 14px;
+			margin-bottom: 20px;
+			border-right: 1px solid #aaa;
+			float: left;
+			a {
+				font-size: 14px;
+				padding: 0 35px;
+				line-height: 0;
+			}
+		}
+		li:last-child, li:nth-child(5) {
+			border: none;
+			color: #838383;
+		}
+		li:nth-child(6) {
+			margin-left: 40px;
+		}
+	}
+	ul + span {
+		margin-left: 55px;
+	}
+	div.serch {
+		input {
+			display: block;
+			float: left;
+			height: 30px;
+			background: #000;
+			border: 1px solid #fff;
+			padding: 0 5px;
+		}
+		button {
+			display: block;
+			float: left;
+			width: 30px;
+			height: 30px;
+			border: none;
+			background: url("../img/search_03.png") no-repeat;
+		}
+		span {
+			padding-left: 15px;
+			display: inline-block;
+			width: 100px;
+			margin-top: 15px;
+		}
+	}
+	.foot2_con {
+		margin-top: 40px;
+		height: 20px;
+		line-height: 20px;
+		span {
+			padding: 10px;
+		}
+		.logo_sm {
+			display: inline-block;
+			width: 110px;
+			height: 20px;
+			background: url("../img/logo_sm.png") no-repeat 0 7px;
+		}
+		.jing {
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			background: url("../img/pingtu.png") no-repeat -449px -31px;
+		}
+	}
+}*/

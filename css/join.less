@@ -1,0 +1,188 @@
+@title-black: #121212;
+@bg-gray: #eee;
+@font-red: #C5152D;
+@font-white: #fff;
+@font-black: #000;
+@font-xs: 12px;
+@font-en: 14px;
+@font-sm: 16px;
+@font-md: 22px;
+@font-lg: 28px;
+@pad-12: 12px;
+@w-100: 100%;
+
+.font-red {
+	color: #DA2D43;
+}
+.news-matter{
+	margin-top: 100px;
+}
+.con_nav {
+	width: 100%;
+	margin: 30px 0;
+	padding: 0 160px;
+	font-size: @font-sm;
+	background: @bg-gray;
+	a {
+		display: inline-block;
+		padding: 20px 0;
+		color: #404040;
+	}
+	span.active {
+		display: inline-block;
+		padding: 20px 0;
+		color: #DC4A58;
+		border-bottom: 1px solid #DC4A58;
+	}
+}
+.line_font {
+	color: #000;
+	border-bottom: 2px solid @font-black;
+}
+
+.a_detail {
+	float: left;
+	font-size: @font-en;
+	color: #878787;
+}
+
+.arrow_rt {
+	float: right;
+	display: block;
+	width: 35px;
+	height: 15px;
+	background: url("../img/pingtu.png") no-repeat -401px 0;
+}
+.box_lg {
+	padding: 0 160px;
+	.row{
+		width: 100%;
+		margin:0;
+	}
+	@media (max-width:1200px){
+		padding:0 50px;
+	}
+	.con_list {
+		margin-right: 43px;
+		margin-bottom: 20px;
+		padding: 75px 5px 75px 30px;
+		font-weight: bold;
+		background: @bg-gray;
+		h4 {
+			font-size: 20px;
+			line-height: 28px;
+		}
+		.line_01 {
+			width: 45px;
+			margin: 44px 0;
+			border-bottom: 1px solid #ACACAC;
+		}
+	}
+	.list_detail {
+		padding: 0 0px 46px;
+		.row {
+			//padding-top: 10px;
+			> div {
+				float: left;
+				margin-bottom: 65px;
+				//padding: 10px 20px 20px 10px;
+			}
+			.coo_box {
+				clear: both;
+				padding: 30px 0 50px 0;
+				//min-height: 274px;
+				-webkit-box-shadow: 5px 5px 30px 0px #ebebeb;
+				-moz-box-shadow: 5px 5px 30px 0px #ebebeb;
+				box-shadow: 5px 5px 30px 0px #ebebeb;
+				position: relative;
+				z-index: 20;
+				overflow: hidden;
+				.lf {
+					width: 108px;
+					height: 95px;
+					padding-top: 42px;
+					margin-top: 30px;
+					border-left: 6px solid #d7142e;
+					i {
+						float: right;
+						width: 66px;
+						height: 68px;
+						margin-top: -30px;
+						background: url("../img/pingtu.png") no-repeat  -1px -134px;
+					}
+				}
+				@media (max-width: 1300px) {
+					.lf {
+						width: 90px;
+					}
+				}
+				.rt {
+					width: 70%;
+					//padding-right: 55px;
+					.arrow_rt {
+						margin-top: -20px;
+					}
+					p.coo_title {
+						h3 {
+							width: 171px;
+						}
+					}
+					.line_font {
+						width: 64px;
+						border-bottom: 4px solid #999;
+						padding-top: 24px;
+						margin-bottom: 24px;
+					}
+					.coo_detail {
+						color: #7B7B7B;
+						font-size: 18px;
+						line-height: 32px;
+					}
+				}
+				@media (max-width: 765px) {
+					.rt {
+						float: left;
+						padding-left: 20px;
+						width: 100%;
+						padding-right: 10px;
+					}
+				}
+				@media (max-width: 1550px) and(min-width: 1170px) {
+					.rt {
+						padding-right: 10px;
+					}
+				}
+			}
+			> div:nth-child(2) > .coo_box>.lf i {
+				background-position: -67px -134px;
+			}
+			> div:nth-child(3) > .coo_box> .lf i {
+				background-position: -133px -134px;
+			}
+			> div:nth-child(4) > .coo_box> .lf i {
+				background-position: -320px -134px;
+			}
+		}
+
+	}
+}
+@media (max-width:1650px){
+	.box_lg{
+		padding:0 0px 0 50px;
+		margin: 0 auto;
+	}
+}
+@media (max-width:765px){
+	.box_lg{
+		padding:0 0px;
+		margin: 0 auto;
+		.list_detail {
+			padding: 0;
+		}
+	}
+}
+@media (max-width:765px){
+	.con_nav{
+		padding: 0 45px;
+	}
+}

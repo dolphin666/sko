@@ -1,0 +1,255 @@
+@title-black: #121212;
+@bg-gray: #eee;
+@font-red: #C5152D;
+@font-white: #fff;
+@font-black: #000;
+@font-xs: 12px;
+@font-en: 14px;
+@font-sm: 16px;
+@font-md: 22px;
+@font-lg: 28px;
+@pad-12: 12px;
+@w-100: 100%;
+
+.font-red {
+	color: #DA2D43;
+}
+
+.container {
+	padding: 0;
+	margin: 0
+}
+.news-matter{
+	margin-top: 101px;
+}
+.con_nav {
+	width: 100%;
+	margin: 30px 0;
+	padding: 0 160px;
+	font-size: @font-sm;
+	background: @bg-gray;
+	a {
+		display: inline-block;
+		padding: 20px 0;
+		color: #404040;
+	}
+	span.active {
+		display: inline-block;
+		padding: 20px 0;
+		color: #DC4A58;
+		border-bottom: 1px solid #DC4A58;
+	}
+}
+
+h3 {
+	font-size: 24px;
+	font-weight: bold;
+	padding-top: 50px;
+}
+p.line {
+	padding: 30px 0;
+	> span {
+		display: inline-block;
+		width: 30px;
+		border-bottom: 2px solid #7F7F7F;
+	}
+}
+.brand_info_a {
+	width: 100%;
+	padding: 80px 160px;
+	.info_2 {
+		padding: 130px 0 0;
+		div:first-child {
+			padding-top: 25px;
+		}
+		h3 {
+			font-size: 18px;
+			font-weight: bold;
+			padding-top: 40px;
+			line-height: 30px;
+		}
+		p.line {
+			padding: 20px 0 30px;
+			> span {
+				display: inline-block;
+				width: 30px;
+				border-bottom: 2px solid #7F7F7F;
+			}
+		}
+		p.detail_a {
+			line-height: 28px;
+			font-size: 18px;
+			padding-bottom: 20px;
+		}
+	}
+
+}
+.brand_info_d{
+	background: #fff;
+	width: 100%;
+	padding: 0px 160px 0;
+	color: #ffffff;
+	clear: both;
+	.brand_info_c1{
+		background: url(../img/ovseas_2.jpg) no-repeat;
+		padding: 95px;
+		h3{
+			padding-top: 0;
+			font-size: 18px;
+			line-height: 30px;
+		}
+	}
+	p.line{
+		padding:25px 0;
+		span{
+			border-bottom-color: #ffffff;
+		}
+	}
+	p.detail_d{
+		//line-height: 28px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		font-size: 18px;
+		line-height: 80px;
+		span{
+			display: block;
+		}
+		@media (max-width: 1220px){
+			span{
+				float: left;
+				line-height: 40px;
+			}
+		}
+	}
+	p.detail_d::after{
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+.ovseas_bot{
+	width: 100%;
+	padding: 0 110px 20px 160px;
+	>h3{
+		width: 100%;
+		text-align: center;
+		font-size: 24px;
+		padding-bottom: 80px;
+		span{
+			display: inline-block;
+			width: 20px;
+			border-bottom: 2px solid #000;
+			padding-top: 35px;
+		}
+	}
+	ul{
+		width: 100%;
+		li{
+			float: left;
+			width: 500px;
+			position: relative;
+			background: #f8f8f8;
+			z-index: 1;
+			margin-right: 35px;
+			margin-bottom: 75px;
+			-webkit-box-shadow: 5px 5px 30px 0px #ebebeb;
+			-moz-box-shadow: 5px 5px 30px 0px #ebebeb;
+			box-shadow: 5px 5px 30px 0px #ebebeb;
+			div{
+				float: left;
+			}
+			div:nth-child(1){
+				width: 240px;
+			}
+			div:nth-child(2){
+				padding: 22px 0 0 32px;
+				width: 260px;
+				h5,p{
+					font-size: 18px;
+					color: #7F7F7F;
+				}
+				h5{
+					padding-bottom: 50px;
+				}
+				p{
+					line-height: 35px;
+				}
+			}
+		}
+		@media (max-width:580px){
+			li{
+				width: 260px;
+				div{
+					width:240px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1599px) {
+	.con_nav {
+		padding: 0 50px;
+	}
+
+	.brand_info_a {
+		padding: 40px 50px;
+		.info_2 {
+			padding:0 15px;
+			div:first-child {
+				padding-top: 10px;
+			}
+			h3 {
+				font-size: 18px;
+				padding-top: 20px;
+				line-height: 30px;
+			}
+			p.line {
+				padding: 10px 0;
+				> span {
+					border-bottom: 2px solid #7F7F7F;
+				}
+			}
+			p.detail_a {
+				padding-bottom: 8px;
+			}
+		}
+	}
+	.brand_info_b,.brand_info_c ,.brand_info_d{
+		padding: 40px 50px;
+	}
+	.brand_info_d{
+		span.arrow_down img{
+			padding-bottom: 30px;
+		}
+	}
+}
+
+@media (max-width: 1800px) {
+	.brand_info_a{
+		.info_2{
+			padding-top: 0px;
+			font-size: 16px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.con_nav {
+		padding: 0 10px;
+	}
+	.brand_info_a,.brand_info_b,.brand_info_c,.brand_info_d {
+		padding: 20px 10px;
+	}
+	.brand_info_d .brand_info_c1,.ovseas_bot{
+		padding:30px 5px;
+		p.detail_d {
+			padding-top: 0px;
+			span{
+				font-size: 15px;
+				line-height: 30px;
+			}
+		}
+	}
+
+}
+
