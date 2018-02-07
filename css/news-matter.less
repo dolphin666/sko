@@ -66,6 +66,10 @@
 			padding: 32px 15px;
 			background-color: @bg-gray;
 			margin-bottom: 53px;
+			>div:first-child{
+				position: relative;
+				overflow: hidden;
+			}
 			h3 {
 				font-size: 18px;
 				padding: 5px 0 15px 0;
@@ -93,6 +97,10 @@
 				}
 			}
 
+		}
+		.list_a:hover img{
+			transform: scale(1.1, 1.1);
+			transition: transform 0.6s ease 0s;
 		}
 	}
 }

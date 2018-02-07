@@ -3,7 +3,7 @@ body {
 	margin: 0 auto;
 	padding: 0;
 	font-size: 12px;
-	font-family: "微软雅黑", "Microsoft YaHei";
+	font-family: "PingFangSC-Regular, sans-serif;","微软雅黑", "Microsoft YaHei";
 	overflow-x: hidden;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -266,7 +266,7 @@ body {
 				dd {
 					margin-right: 60px;
 					font-size: 14px;
-					line-height: 50px;
+					line-height: 49px;
 					//padding-top: 2px;
 					position: relative;
 					float: left;
@@ -421,7 +421,7 @@ body {
 	right: -100%;
 	width: 66%;
 	top: 0;
-	z-index: 100;
+	z-index: 1001;
 	height: 100%;
 	background-color: #fff;
 	transition: all 0.64s ease 0s;
@@ -750,6 +750,9 @@ a.read-more {
 
 /* 关于舒士客 about-1 */
 #about_1 {
+	//@media (max-width: 768px){
+	//	margin-top: 101px;
+	//}
 	.main-title {
 		padding-bottom: 52px;
 	}
@@ -817,8 +820,18 @@ a.read-more {
 	.con_detail {
 		line-height: 30px;
 	}
-	img {
+	.hidden-md>div:hover img{
+		transform: scale(1.1, 1.1);
+		transition: transform 0.6s ease 0s;
+		opacity: 1;
+	}
+	div.box_img{
+		position: relative;
+		overflow: hidden;
+		height: auto;
 		margin-top: 28px;
+	}
+	img {
 		opacity: .6;
 	}
 	//img:hover {
@@ -898,6 +911,9 @@ a.read-more {
 	}
 	.row {
 		padding-top: 76px;
+		@media (max-width: 768px){
+			padding-top: 10px;
+		}
 		> div {
 			padding: 10px 20px 20px 10px;
 		}
@@ -1002,24 +1018,41 @@ a.read-more {
 		.row {
 			margin:0 auto;
 			padding: 74px 160px 0;
-			div.col_w {
-				padding: 0 40px 20px;
-				.line_font_bot {
-					width: 100%;
-					padding-top: 40px;
-					margin-bottom: 12px;
-					border-bottom: 1px solid #D0D0D0;
-				}
-				img {
-					position: relative;
-					z-index: 10;
-					width: 100%;
-					-webkit-box-shadow: 10px 10px 20px 0 #C7C7C7;
-					-moz-box-shadow: 10px 10px 20px 0 #C7C7C7;
-					box-shadow: 10px 10px 20px 0 #C7C7C7;
+			>div{
+				padding:0 35px;
+				@media (max-width: 1200px){
+					padding:0;
 				}
 			}
+			.line_font_bot {
+				width: 100%;
+				padding-top: 40px;
+				margin-bottom: 12px;
+				border-bottom: 1px solid #D0D0D0;
+			}
+			div.col_w {
+				padding: 0 5px 20px;
+
+				//img {
+				//	position: relative;
+				//	z-index: 10;
+				//	width: 100%;
+				//	-webkit-box-shadow: 10px 10px 20px 0 #C7C7C7;
+				//	-moz-box-shadow: 10px 10px 20px 0 #C7C7C7;
+				//	box-shadow: 10px 10px 20px 0 #C7C7C7;
+				//}
+			}
 		}
+	}
+	.hidden-md>div:hover img{
+		transform: scale(1.1, 1.1);
+		transition: transform 0.6s ease 0s;
+	}
+	div.box_img{
+		position: relative;
+		overflow: hidden;
+		height: auto;
+		margin-top: 28px;
 	}
 	@media (max-width: 1520px) {
 		.brand_bot {
@@ -1085,12 +1118,23 @@ a.read-more {
 				font-size: 24px;
 				color: #ffffff;
 				border-radius: 35px;
-				padding: 17px 30px;
+				padding: 17px 10px 17px 30px;
 				margin-bottom: 20px;
 				background: rgba(255, 255, 255, .2);
 				input, button {
 					border: none;
 					background: rgba(255, 255, 255, 0);
+				}
+			}
+			p:last-child {
+				float: right;
+			}
+			p.join_btn {
+				text-align: center;
+			}
+			p.yixiang{
+				input{
+					width: 220px;
 				}
 			}
 			@media (max-width: 768px) {
@@ -1101,12 +1145,12 @@ a.read-more {
 					font-size: 14px;
 					padding: 3px 5px;
 				}
-			}
-			p:last-child {
-				float: right;
-			}
-			p.join_btn {
-				text-align: center;
+				p.yixiang{
+					height: 80px;
+					input{
+						width: 220px;
+					}
+				}
 			}
 		}
 		@media (max-width: 1750px) {
@@ -1132,7 +1176,7 @@ a.read-more {
 	}
 	.line_font_bot {
 		width: 100%;
-		padding-top: 40px;
+		//padding-top: 40px;
 		margin-bottom: 12px;
 		border-bottom: 1px solid #D0D0D0;
 	}
@@ -1162,11 +1206,25 @@ a.read-more {
 		opacity: 1;
 		background :#007aff;/*:#eee ;*/
 	}
+	.hidden-md>div:hover img{
+		transform: scale(1.1, 1.1);
+		transition: transform 0.6s ease 0s;
+	}
+	div.box_img{
+		position: relative;
+		overflow: hidden;
+		height: auto;
+		margin-top: 28px;
+	}
 }
 
 /* canal 渠道*/
 #canal {
 	background: #F6F6F6;
+	img:hover {
+		transform: scale(1.1, 1.1);
+		transition: transform 0.6s ease 0s;
+	}
 	.news_con {
 		width: 100%;
 		> h3 {
@@ -1233,10 +1291,13 @@ a.read-more {
 	padding-bottom: 40px;
 	font-size: 12px;
 	background: #fafafa;
+	.container{
+		padding: 0;
+	}
 	.row {
 		padding: 0 90px;
 		> div {
-			padding: 0 80px;
+			padding: 0 50px;
 			margin-bottom: 20px;
 		}
 		.foot_list_tit {
