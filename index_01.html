@@ -339,7 +339,7 @@
                 </div>
             </div>
         </div>
-        <div class="row swiper-container2">
+        <div class="row swiper-container2 hidden-lg">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <p class="en_title">Brand interpretation</p>
@@ -381,11 +381,12 @@
                     </div>
                 </div>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
     </div>
 </div>
 <script>
-    var swiper = new Swiper('.swiper-container2', {
+    var swiper2 = new Swiper('.swiper-container2', {
         autoplay : 2000,
         loop : true,
         breakpoints: {
@@ -400,6 +401,8 @@
                 spaceBetween: 20
             }
         },
+        pagination: '.swiper-pagination',
+        paginationClickable: true
 
     })
 </script>
@@ -420,7 +423,7 @@
             </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row hidden-md hidden-sm hidden-xs">
         <div class="col-lg-4 col-md-6">
             <div class="coo_box">
                 <div class="lf">
@@ -471,7 +474,82 @@
             </div>
         </div>
     </div>
+    <div class="row  swiper-container3 hidden-lg">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="coo_box">
+                    <div class="lf">
+                        <i></i>
+                    </div>
+                    <div class="rt">
+                        <p class="coo_title">
+                        <h3>舒适休闲鞋引领者</h3>
+                        <i class="arrow_rt"></i>
+                        </p>
+                        <p class="line_font"></p>
+                        <p class="coo_detail">SKOHOUSE舒士客-舒适休闲鞋引领者，致力成为全球第一的舒适休闲鞋品牌企业。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="coo_box">
+                    <div class="lf">
+                        <i></i>
+                    </div>
+                    <div class="rt">
+                        <p class="coo_title">
+                        <h3>不二真价</h3>
+                        <i class="arrow_rt"></i>
+                        </p>
+                        <p class="line_font"></p>
+                        <p class="coo_detail">对生命的敬畏及消费者的尊敬
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="coo_box">
+                    <div class="lf">
+                        <i></i>
+                    </div>
+                    <div class="rt">
+                        <p class="coo_title">
+                        <h3>整店输出</h3>
+                        <i class="arrow_rt"></i>
+                        </p>
+                        <p class="line_font"></p>
+                        <p class="coo_detail">全程无忧开店，盈利有保障
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
 </div>
+<script>
+    var swiper3 = new Swiper('.swiper-container3', {
+        autoplay : 2000,
+        loop : true,
+        breakpoints: {
+            //当宽度小于等于1200
+            1200: {
+                slidesPerView: 2,
+                spaceBetween: 10
+            },
+            //当宽度小于等于600
+            600: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            }
+        },
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+
+    })
+</script>
 <!-- brand 品牌-->
 <div id="brand">
     <div class="container">
@@ -490,7 +568,7 @@
         </div>
     </div>
     <div class="container brand_bot">
-        <div class="row">
+        <div class="row hidden-md hidden-sm hidden-xs">
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <div>
                     <img class="img-responsive" src="img/brand_01.jpg" alt="团队运营 共享品牌价值">
@@ -516,8 +594,58 @@
                 </div>
             </div>
         </div>
+        <div class="row hidden-lg swiper-container4">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="col_w">
+                        <img class="img-responsive" src="img/brand_01.jpg" alt="团队运营 共享品牌价值">
+                        <p class="line_font_bot"></p>
+                        <a class="a_detail">detail</a>
+                        <a href="#"><i class="arrow_rt"></i></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="col_w">
+                        <img class="img-responsive" src="img/brand_02.jpg" alt="顾客见证">
+                        <p class="line_font_bot"></p>
+                        <a class="a_detail">detail</a>
+                        <a href="#"><i class="arrow_rt"></i></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="col_w">
+                        <img class="img-responsive" src="img/brand_03.jpg" alt="品牌荣誉">
+                        <p class="line_font_bot"></p>
+                        <a class="a_detail">detail</a>
+                        <a href="#"><i class="arrow_rt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
     </div>
 </div>
+<script>
+    var swiper4 = new Swiper('.swiper-container4', {
+        autoplay : 2000,
+        loop : true,
+        breakpoints: {
+            //当宽度小于等于1200
+            1200: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+            //当宽度小于等于600
+            600: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            }
+        },
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+
+    })
+</script>
 <!-- join 加盟-->
 <div id="join">
     <div class="container">
@@ -569,7 +697,7 @@
             <div class="lf">
                 <p class="en_title">News information</p>
                 <h2 class="con_title">新闻动态</h2>
-                <p class="line_font"></p>
+                <p class="line_font hidden-md hidden-sm hidden-xs"></p>
             </div>
             <div class="rt hidden-xs">
                 <a href="#" class="read-more">
@@ -580,7 +708,7 @@
         </div>
     </div>
     <div class="container">
-        <div class="row">
+        <div class="row hidden-md hidden-sm hidden-xs">
             <div class="col-lg-4 col-sm-6 col-xs-12">
                 <img class="img-responsive" src="img/about_3.png" alt="品牌诠释">
                 <div class="news_con">
@@ -621,9 +749,73 @@
                 </div>
             </div>
         </div>
+        <div class="row hidden-lg swiper-container5">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="img-responsive" src="img/about_3.png" alt="品牌诠释">
+                    <div class="news_con">
+                        <h3>品牌动态 Brand dynamics</h3>
+                        <p class="con_detail">
+                            舒士客(SKOHOUSE)的内在涵义是指生产商直达消费者，摒弃中间化以及不必要的环节，仓储式自选购物模式，以真不二价的经营哲学为消费者带来舒适及最高性价比的商品；</p>
+                        <p class="line_font_bot"></p>
+                        <div class="about2_bot">
+                            <a class="a_detail">detail</a>
+                            <a href="#"><i class="arrow_rt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-responsive" src="img/about_3.png" alt="品牌诠释">
+                    <div class="news_con">
+                        <h3>行业资讯 Industry information</h3>
+                        <p class="con_detail">
+                            舒士客(SKOHOUSE)的内在涵义是指生产商直达消费者，摒弃中间化以及不必要的环节，仓储式自选购物模式，以真不二价的经营哲学为消费者带来舒适及最高性价比的商品；</p>
+                        <p class="line_font_bot"></p>
+                        <div class="about2_bot">
+                            <a class="a_detail">detail</a>
+                            <a href="#"><i class="arrow_rt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-responsive" src="img/about_3.png" alt="品牌诠释">
+                    <div class="news_con">
+                        <h3>媒体报道 Media coverage</h3>
+                        <p class="con_detail">
+                            舒士客(SKOHOUSE)的内在涵义是指生产商直达消费者，摒弃中间化以及不必要的环节，仓储式自选购物模式，以真不二价的经营哲学为消费者带来舒适及最高性价比的商品；</p>
+                        <p class="line_font_bot"></p>
+                        <div class="about2_bot">
+                            <a class="a_detail">detail</a>
+                            <a href="#"><i class="arrow_rt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
     </div>
 </div>
+<script>
+    var swiper5 = new Swiper('.swiper-container5', {
+        autoplay : 2000,
+        loop : true,
+        breakpoints: {
+            //当宽度小于等于1200
+            1200: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            //当宽度小于等于600
+            600: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            }
+        },
+        pagination: '.swiper-pagination',
+        paginationClickable: true
 
+    })
+</script>
 <!-- canal 渠道 -->
 <div id="canal">
     <div class="container">
