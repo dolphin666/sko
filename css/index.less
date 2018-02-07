@@ -213,9 +213,9 @@ body {
 	background: #fff;
 }
 /* header */
-/*#header {
+#header {
 	background-color: #fff;
-	padding: 20px 140px 20px 160px;
+	padding: 20px 140px 0px 160px;
 	border: none;
 	@media (max-width: 1420px) {
 		padding: 20px 60px;
@@ -245,69 +245,90 @@ body {
 		li {
 			> a {
 				background-color: #fff;
-				padding: 10px 20px;
+				padding: 10px 20px 45px;
+			}
+			.sub-nav {
+				position: fixed;
+				top: 100px;
+				left: 0;
+				width: 100%;
+				background-color: #fff;
+				height: 50px;
+				z-index: 2;
+				border-top: 1px solid #ddd;
+				border-bottom: 1px solid #ddd;
+				display: none;
+				dl {
+					float: right;
+					width: 736px;
+					margin-right: -50px;
+				}
+				dd {
+					margin-right: 60px;
+					font-size: 14px;
+					line-height: 50px;
+					//padding-top: 2px;
+					position: relative;
+					float: left;
+					a {
+						display: inline-block;
+						color: #777;
+					}
+					i {
+						display: block;
+						width: 0;
+						position: absolute;
+						left: 50%;
+						bottom: 0;
+						height: 3px;
+						background-color: #333;
+					}
+				}
+				dl.brand_menu {
+					dd {
+						margin-right: 30px;
+					}
+				}
+				dd:hover a {
+					color: #333;
+				}
+				dd:hover i {
+					left: 0;
+					width: 100%;
+					transition: all 0.4s ease 0s;
+				}
+				dd.hover a {
+					color: #333;
+				}
+				dd.hover i {
+					left: 0;
+					width: 100%;
+				}
+				li.cur a.tit-a {
+					color: #888;
+				}
 			}
 		}
-	}
-	.sub-nav {
-		position: fixed;
-		top: 100px;
-		left: 0;
-		width: 100%;
-		background-color: #fff;
-		height: 50px;
-		z-index: 2;
-		border-top: 1px solid #ddd;
-		border-bottom: 1px solid #ddd;
-		display: none;
-		dl {
-			float: right;
-			width: 736px;
-			margin-right: -50px;
+		@media(min-width:1421px){
+			li:nth-child(4) .sub-nav dl {margin-right: 200px;}
+			li:nth-child(5) .sub-nav dl {margin-right: 6px;}
+			li:nth-child(6) .sub-nav dl {margin-right: 20px;}
+			li:nth-child(7) .sub-nav dl {margin-right: -70px;}
+			li:nth-child(8) .sub-nav dl {margin-right: -200px;}
 		}
-		dd {
-			margin-right: 60px;
-			font-size: 14px;
-			line-height: 50px;
-			//padding-top: 2px;
-			position: relative;
-			float: left;
-			a {
-				display: inline-block;
-				color: #777;
-			}
-			i {
-				display: block;
-				width: 0;
-				position: absolute;
-				left: 50%;
-				bottom: 0;
-				height: 3px;
-				background-color: #333;
-			}
+		@media(max-width:1420px) and (min-width:992px) {
+			li:nth-child(4) .sub-nav dl {margin-right: 100px;}
+			li:nth-child(5) .sub-nav dl {margin-right: -94px;}
+			li:nth-child(6) .sub-nav dl {margin-right: -80px;}
+			li:nth-child(7) .sub-nav dl {margin-right: -170px;}
+			li:nth-child(8) .sub-nav dl {margin-right: -300px;}
 		}
-		dl.brand_menu {
-			dd {
-				margin-right: 30px;
-			}
-		}
-		dd:hover a {
-			color: #333;
-		}
-		dd:hover i {
-			left: 0;
-			width: 100%;
-			transition: all 0.4s ease 0s;
-		}
-		dd.hover a {
-			color: #333;
-		}
-		dd.hover i {
-			left: 0;
-			width: 100%;
-		}
-		li.cur a.tit-a {
-			color: #888;
+		@media (max-width:991px){
+			li:nth-child(4) .sub-nav dl {margin-right: -170px;}
+			li:nth-child(5) .sub-nav dl {margin-right: -370px;}
+			li:nth-child(6) .sub-nav dl {margin-right: -300px;}
+			li:nth-child(7) .sub-nav dl {margin-right: -300px;}
+			li:nth-child(8) .sub-nav dl {margin-right: -420px;}
 		}
 	}
 	@media (max-width:768px){
@@ -315,10 +336,10 @@ body {
 			display: none;
 		}
 	}
-}*/
+}
 .ovh {
 	overflow: hidden; }
-/*#bs-navbar {
+#bs-navbar {
 	color: #292929;
 	font-size: 14px;
 	font-weight: bold;
@@ -361,9 +382,9 @@ body {
 			color: @font-red;
 		}
 	}
-}*/
+}
 /* 移动端头部 */
-/*.clear {
+.clear {
 	clear: both;
 }
 
@@ -523,7 +544,7 @@ body {
 }
 .m-sub-menu .sec-sub-list .bot-link {
 	margin-top: 14px;
-}*/
+}
 
 /* 手机头部end */
 
@@ -809,6 +830,9 @@ a.read-more {
 	}
 	.about2_bot {
 		padding-top: 12px;
+	}
+	.swiper-container2{
+		margin-left:auto;margin-right:auto;position:relative;overflow:hidden;z-index:1
 	}
 }
 
@@ -1130,7 +1154,7 @@ a.read-more {
 }
 
 /* footer */
-/*#footer {
+#footer {
 	Padding-top: 45px;
 	padding-bottom: 40px;
 	font-size: 12px;
@@ -1207,10 +1231,9 @@ a.read-more {
 			}
 		}
 	}
-}*/
+}
 
 /* footer_02 */
-/*
 #footer_02 {
 	padding: 85px 160px;
 	@media (max-width: 1200px) {
@@ -1293,4 +1316,4 @@ a.read-more {
 			background: url("../img/pingtu.png") no-repeat -449px -31px;
 		}
 	}
-}*/
+}

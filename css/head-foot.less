@@ -155,20 +155,20 @@ a:hover {
 			font-size: @font-xs;
 		}
 	}
-	.litel{
-		left:0px;
-		width:295px;
+	.litel {
+		left: 0px;
+		width: 295px;
 		padding-right: 215px;
-		.let_n{
+		.let_n {
 			position: absolute;
 			display: block;
-			top:0;
-			left:80px;
-			width:185px;
+			top: 0;
+			left: 80px;
+			width: 185px;
 			height: 60px;
 			line-height: 60px;
 			font-size: 24px;
-			b{
+			b {
 				border-right: 1px solid #CDCDCD;
 			}
 		}
@@ -240,9 +240,6 @@ body {
 	padding: 20px 140px 0px 160px;
 	border: none;
 	@media (max-width: 1420px) {
-		padding: 20px 60px;
-	}
-	@media (max-width: 1240px) {
 		padding: 20px 40px;
 	}
 	@media (max-width: 780px) {
@@ -252,13 +249,7 @@ body {
 		width: 100%;
 		padding: 0;
 	}
-	/*.logo {
-		float: left;
-		width: 218px;
-		height: 53px;
-		background: url("../img/pingtu.png") no-repeat;
-	}*/
-	@media (max-width: 480px){
+	@media (max-width: 480px) {
 		.logo img {
 			height: 50px;
 		}
@@ -269,67 +260,89 @@ body {
 				background-color: #fff;
 				padding: 10px 20px 45px;
 			}
+			.sub-nav {
+				position: fixed;
+				top: 100px;
+				left: 0;
+				width: 100%;
+				background-color: #fff;
+				height: 50px;
+				z-index: 2;
+				border-top: 1px solid #ddd;
+				border-bottom: 1px solid #ddd;
+				display: none;
+				dl {
+					float: right;
+					width: 736px;
+					margin-right: -50px;
+				}
+				dd {
+					margin-right: 60px;
+					font-size: 14px;
+					line-height: 47px;
+					padding-top: 4px;
+					position: relative;
+					float: left;
+					a {
+						display: inline-block;
+						color: #777;
+					}
+					i {
+						display: block;
+						width: 0;
+						position: absolute;
+						left: 50%;
+						bottom: 0;
+						height: 3px;
+						background-color: #333;
+					}
+				}
+				dl.brand_menu dd {
+					margin-right: 30px;
+				}
+				dd:hover a {
+					color: #333;
+				}
+				dd:hover i {
+					left: 0;
+					width: 100%;
+					transition: all 0.4s ease 0s;
+				}
+				dd.hover a {
+					color: #333;
+				}
+				dd.hover i {
+					left: 0;
+					width: 100%;
+				}
+				li.cur a.tit-a {
+					color: #888;
+				}
+			}
+		}
+		@media(min-width:1421px){
+			li:nth-child(4) .sub-nav dl {margin-right: 200px;}
+			li:nth-child(5) .sub-nav dl {margin-right: 6px;}
+			li:nth-child(6) .sub-nav dl {margin-right: 20px;}
+			li:nth-child(7) .sub-nav dl {margin-right: -70px;}
+			li:nth-child(8) .sub-nav dl {margin-right: -200px;}
+		}
+		@media(max-width:1420px) and (min-width:992px) {
+			li:nth-child(4) .sub-nav dl {margin-right: 100px;}
+			li:nth-child(5) .sub-nav dl {margin-right: -94px;}
+			li:nth-child(6) .sub-nav dl {margin-right: -80px;}
+			li:nth-child(7) .sub-nav dl {margin-right: -170px;}
+			li:nth-child(8) .sub-nav dl {margin-right: -300px;}
+		}
+		@media (max-width:991px){
+			li:nth-child(4) .sub-nav dl {margin-right: -170px;}
+			li:nth-child(5) .sub-nav dl {margin-right: -370px;}
+			li:nth-child(6) .sub-nav dl {margin-right: -300px;}
+			li:nth-child(7) .sub-nav dl {margin-right: -300px;}
+			li:nth-child(8) .sub-nav dl {margin-right: -420px;}
 		}
 	}
-	.sub-nav {
-		position: fixed;
-		top: 100px;
-		left: 0;
-		width: 100%;
-		background-color: #fff;
-		height: 50px;
-		z-index: 2;
-		border-top: 1px solid #ddd;
-		border-bottom: 1px solid #ddd;
-		display: block;/*TODO: 修改*/
-		dl {
-			float: right;
-			width: 736px;
-			margin-right:-50px;
-		}
-		dd {
-			margin-right: 60px;
-			font-size: 14px;
-			line-height: 47px;
-			padding-top: 4px;
-			position: relative;
-			float: left;
-			a {
-				display: inline-block;
-				color: #777;
-			}
-			i {
-				display: block;
-				width: 0;
-				position: absolute;
-				left: 50%;
-				bottom: 0;
-				height: 3px;
-				background-color: #333;
-			}
-		}
-		dl.brand_menu dd{
-			margin-right:30px;
-		}
-		dd:hover a {
-			color: #333;
-		}
-		dd:hover i {
-			left: 0;
-			width: 100%;
-			transition: all 0.4s ease 0s;
-		}
-		dd.hover a {
-			color: #333;
-		}
-		dd.hover i {
-			left: 0;
-			width: 100%;
-		}
-		li.cur a.tit-a {
-			color: #888;
-		}
-	}
+
 }
 
 #bs-navbar {
@@ -379,10 +392,12 @@ body {
 
 /* 手机头部 */
 .clear {
-	clear: both; }
+	clear: both;
+}
 
 .f-cb {
-	zoom: 1; }
+	zoom: 1;
+}
 
 .f-cb:after {
 	display: block;
@@ -390,20 +405,24 @@ body {
 	clear: both;
 	visibility: hidden;
 	overflow: hidden;
-	content: "."; }
+	content: ".";
+}
 
 .fl {
 	float: left;
-	display: inline; }
+	display: inline;
+}
 
 .fr {
 	float: right;
-	display: inline; }
+	display: inline;
+}
 
-.left{
+.left {
 	transform: translateX(-66%);
 	transition: all 0.44s ease 0s;
 }
+
 .m-sub-menu.show {
 	right: 0;
 	transition: all 0.44s ease 0s;
@@ -419,10 +438,12 @@ body {
 	background-color: #fff;
 	transition: all 0.64s ease 0s;
 }
+
 .m-sub-menu .top-box {
 	line-height: 60px;
 	background-color: #333;
 }
+
 .m-sub-menu .top-box .stt {
 	display: inline-block;
 	font-size: 16px;
@@ -430,6 +451,7 @@ body {
 	margin-left: 8.2%;
 	font-family: "Base-font";
 }
+
 .m-sub-menu .top-box .close {
 	display: inline-block;
 	width: 17px;
@@ -439,23 +461,28 @@ body {
 	margin-top: 22px;
 	cursor: pointer;
 }
+
 .m-sub-menu .list-wrap ul {
 	width: 100%;
 }
+
 .m-sub-menu .list-wrap li {
 	line-height: 60px;
 	width: 100%;
 	border-bottom: 1px solid #f2f2f2;
 }
+
 .m-sub-menu .list-wrap li .col-box {
 	display: block;
 	width: 84%;
 	padding: 0 7.8% 0 8.2%;
 }
+
 .m-sub-menu .list-wrap .tit {
 	font-size: 16px;
 	color: #666;
 }
+
 .m-sub-menu .list-wrap .point {
 	display: inline-block;
 	width: 8px;
@@ -463,11 +490,13 @@ body {
 	background: url(../img/ico_38.png) no-repeat center;
 	margin-top: 26px;
 }
+
 .m-sub-menu .bot-link {
 	width: 84%;
 	padding: 0 7.8% 0 8.2%;
 	margin-top: 30px;
 }
+
 .m-sub-menu .bot-link a {
 	display: inline-block;
 	width: 36px;
@@ -475,12 +504,14 @@ body {
 	margin-right: 20px;
 	float: left;
 }
+
 .m-sub-menu .sec-sub-list {
 	position: absolute;
 	right: -100%;
 	top: 60px;
 	width: 100%;
 }
+
 .m-sub-menu .sec-sub-list .return-fir {
 	display: block;
 	width: 84%;
@@ -488,12 +519,14 @@ body {
 	line-height: 60px;
 	background-color: #333;
 }
+
 .m-sub-menu .sec-sub-list .return-fir p {
 	padding-left: 18px;
 	color: #fff;
 	font-size: 18px;
 	background: url(../img/ico_42.png) no-repeat left center;
 }
+
 .m-sub-menu .sec-sub-list .boxs {
 	width: 100%;
 	position: absolute;
@@ -501,7 +534,7 @@ body {
 	top: 0;
 	transition: all 0.4s ease 0s;
 	background-color: #fff;
-	li.lixi{
+	li.lixi {
 		display: inline-block;
 		vertical-align: middle;
 		padding-left: 20px;
@@ -518,16 +551,20 @@ body {
 		}
 	}
 }
+
 .m-sub-menu .sec-sub-list .boxs.show {
 	left: -100%;
 }
+
 .m-sub-menu .sec-sub-list ul, .m-sub-menu .sec-sub-list li {
 	width: 100%;
 }
+
 .m-sub-menu .sec-sub-list li {
 	line-height: 60px;
 	border-bottom: 1px solid #f2f2f2;
 }
+
 .m-sub-menu .sec-sub-list li a {
 	display: block;
 	width: 84%;
@@ -535,6 +572,7 @@ body {
 	font-size: 16px;
 	color: #666;
 }
+
 .m-sub-menu .sec-sub-list .bot-link {
 	margin-top: 14px;
 }

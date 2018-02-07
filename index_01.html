@@ -17,7 +17,7 @@
     <!--<script src="node_modules/bootstrap/dist/js/jquery.min.js"></script>-->
     <!--<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>-->
     <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="css/head-foot.css">
+    <!--<link rel="stylesheet" href="css/head-foot.css">-->
     <link rel="stylesheet" href="css/index.css">
     <script src="js/jquery-2.1.4.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
@@ -298,7 +298,7 @@
 <!-- about2 关于 -->
 <div id="about_2">
     <div class="container">
-        <div class="row">
+        <div class="row hidden-md hidden-sm hidden-xs">
             <div class="col-lg-4 col-sm-6 col-xs-12">
                 <p class="en_title">Brand interpretation</p>
                 <p class="line_font"></p>
@@ -339,8 +339,70 @@
                 </div>
             </div>
         </div>
+        <div class="row swiper-container2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <p class="en_title">Brand interpretation</p>
+                    <p class="line_font"></p>
+                    <h2 class="con_title">品牌诠释</h2>
+                    <p class="con_detail">
+                        舒士客(SKOHOUSE)的内在涵义是指生产商直达消费者，摒弃中间化以及不必要的环节，仓储式自选购物模式，以真不二价的经营哲学为消费者带来舒适及最高性价比的商品；</p>
+                    <img class="img-responsive" src="img/about_3.png" alt="品牌诠释">
+                    <p class="line_font_bot"></p>
+                    <div class="about2_bot">
+                        <a class="a_detail">detail</a>
+                        <a href="#"><i class="arrow_rt"></i></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <p class="en_title">Store image</p>
+                    <p class="line_font"></p>
+                    <h2 class="con_title">店铺形象</h2>
+                    <p class="con_detail">
+                        舒士客(SKOHOUSE)的内在涵义是指生产商直达消费者，摒弃中间化以及不必要的环节，仓储式自选购物模式，以真不二价的经营哲学为消费者带来舒适及最高性价比的商品；</p>
+                    <img class="img-responsive" src="img/about_04.png" alt="品牌诠释">
+                    <p class="line_font_bot"></p>
+                    <div class="about2_bot">
+                        <a class="a_detail">detail</a>
+                        <a href="#"><i class="arrow_rt"></i></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <p class="en_title">Recruit and recruit</p>
+                    <p class="line_font"></p>
+                    <h2 class="con_title">加盟招募</h2>
+                    <p class="con_detail">
+                        舒士客(SKOHOUSE)的内在涵义是指生产商直达消费者，摒弃中间化以及不必要的环节，仓储式自选购物模式，以真不二价的经营哲学为消费者带来舒适及最高性价比的商品；</p>
+                    <img class="img-responsive" src="img/about_05.png" alt="品牌诠释">
+                    <p class="line_font_bot"></p>
+                    <div class="about2_bot">
+                        <a href="#" class="a_detail">detail</a>
+                        <a href="#"><i class="arrow_rt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+<script>
+    var swiper = new Swiper('.swiper-container2', {
+        autoplay : 2000,
+        loop : true,
+        breakpoints: {
+            //当宽度小于等于1200
+            1200: {
+                slidesPerView: 2,
+                spaceBetween: 10
+            },
+            //当宽度小于等于600
+            600: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            }
+        },
+
+    })
+</script>
 <!-- cooperate 合作-->
 <div id="cooperate">
     <div class="container">
