@@ -1,3 +1,4 @@
+
 @title-black: #121212;
 @bg-gray: #eee;
 @font-red: #C5152D;
@@ -79,7 +80,7 @@
 		}
 	}
 	.list_detail {
-		padding: 0 0px 46px;
+		padding: 0 0 46px;
 		.row {
 			//padding-top: 10px;
 			> div {
@@ -97,6 +98,8 @@
 				position: relative;
 				z-index: 20;
 				overflow: hidden;
+				@media (max-width: 768px){
+					width: 100%;}
 				.lf {
 					width: 108px;
 					height: 95px;
@@ -142,8 +145,8 @@
 				@media (max-width: 765px) {
 					.rt {
 						float: left;
-						padding-left: 20px;
-						width: 100%;
+						padding-left: 25px;
+						//width: 100%;
 						padding-right: 10px;
 					}
 				}
@@ -178,6 +181,14 @@
 		margin: 0 auto;
 		.list_detail {
 			padding: 0;
+			.row>div{
+				margin-bottom: 30px;
+			}
+		}
+	}
+	.box_lg{
+		.row>div{
+			width: 100%;
 		}
 	}
 }
