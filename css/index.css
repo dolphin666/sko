@@ -108,6 +108,10 @@ a:hover {
   width: 80px;
   z-index: 1000;
 }
+.r_float a {
+  color: #fff;
+  text-decoration: none;
+}
 .r_float .right_fixed {
   position: absolute;
   right: -20px;
@@ -238,17 +242,17 @@ body {
 }
 @media (max-width: 1420px) {
   #header {
-    padding: 20px 60px;
+    padding: 20px 60px 0;
   }
 }
 @media (max-width: 1240px) {
   #header {
-    padding: 20px 40px;
+    padding: 20px 40px 0;
   }
 }
 @media (max-width: 780px) {
   #header {
-    padding: 20px 20px;
+    padding: 20px 20px 0;
   }
 }
 #header > .container-fluid {
@@ -263,6 +267,9 @@ body {
 #header ul li > a {
   background-color: #fff;
   padding: 10px 20px 45px;
+}
+#header ul li a:hover {
+  color: #C5152D;
 }
 #header ul li .sub-nav {
   position: fixed;
@@ -678,9 +685,6 @@ body {
   bottom: 0;
   left: 42px;
   margin: auto;
-  /*background: url("../img/bofang.png");
-	background-size: 100%;
-	background-repeat: no-repeat;*/
 }
 @media (max-width: 765px) {
   .zhongb .img1 {
@@ -692,28 +696,6 @@ body {
   height: 100%;
   vertical-align: top;
 }
-/*.banner .shangyi{
-	display: block;
-	width: 60px;
-	height:60px;
-	position: absolute;
-	top:0;
-	bottom:0;
-	left: 50px;
-	margin: auto;
-	z-index: 990;
-}
-.banner .xiayi{
-	display: block;
-	width: 60px;
-	height:60px;
-	position: absolute;
-	top:0;
-	bottom:0;
-	right: 50px;
-	margin: auto;
-	z-index: 990;
-}*/
 /* 通用部分 */
 .en_title {
   font-size: 14px;
@@ -913,12 +895,6 @@ a.read-more > span {
 }
 #cooperate .row {
   padding-top: 76px;
-  /*.coo_box:hover{
-			-webkit-box-shadow: 5px 5px 30px 0px #ebebeb;
-			-moz-box-shadow: 5px 5px 30px 0px #ebebeb;
-			box-shadow: 5px 5px 30px 0px #ebebeb;
-			transition: all 0.6s ease 0s;
-		}*/
 }
 @media (max-width: 768px) {
   #cooperate .row {
@@ -1017,11 +993,6 @@ a.read-more > span {
 /* 品牌 brand */
 #brand {
   background: #EEEEEE;
-  /*@media (max-width:1200px){
-		.swiper-container4>.swiper-wrapper>div.swiper-slide{
-			margin-right:61px;
-		}
-	}*/
   /* 轮播控制点 */
 }
 #brand .brand_bot .row {
@@ -1076,7 +1047,6 @@ a.read-more > span {
 #brand .swiper-pagination-bullet-active {
   opacity: 1;
   background: #007aff;
-  /*:#eee ;*/
 }
 /* 加盟 join */
 #join {

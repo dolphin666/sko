@@ -148,7 +148,7 @@ p.line {
 			padding-top: 35px;
 		}
 	}
-	ul{
+	/*ul{
 		width: 100%;
 		li{
 			float: left;
@@ -202,6 +202,60 @@ p.line {
 				width: 239px;
 			}
 		}
+	}*/
+	.row{
+		padding: 0;
+		margin: 0;
+		.box_ov{
+			padding: 0;
+			padding-right: 2%;
+			padding-bottom: 5%;
+			.bor{
+				width: 95%;
+				height: 95%;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				-webkit-box-shadow: 5px 5px 30px 0px #ebebeb;
+				-moz-box-shadow: 5px 5px 30px 0px #ebebeb;
+				box-shadow: 5px 5px 30px 0px #ebebeb;
+				overflow: hidden;
+				clear: both;
+			}
+			.lf{
+				width: 50%;
+				img{
+					text-align: left;
+				}
+			}
+			.rt{
+				width: 50%;
+				font-size: 18px;
+				color: #7F7F7F;
+				padding-left: 5%;
+				padding-top: 5%;
+				span{
+					display: inline-block;
+					line-height: 30px;
+				}
+				span:first-child{
+					padding-bottom: 10%;
+				}
+			}
+			@media (max-width: 420px){
+				.rt{
+					font-size: 15px;
+					padding-left: 5%;
+					padding-top: 5%;
+					span{
+						line-height: 20px;
+					}
+					span:first-child{
+						padding-bottom: 10%;
+					}
+				}
+			}
+		}
 	}
 }
 @media (max-width: 1599px) {
@@ -232,7 +286,7 @@ p.line {
 			}
 		}
 	}
-	.brand_info_b,.brand_info_c ,.brand_info_d{
+	.brand_info_b,.brand_info_c ,.brand_info_d,.ovseas_bot{
 		padding: 40px 50px;
 	}
 	.brand_info_d{
@@ -255,10 +309,10 @@ p.line {
 	.con_nav {
 		padding: 0 10px;
 	}
-	.brand_info_a,.brand_info_b,.brand_info_c,.brand_info_d {
+	.brand_info_a,.brand_info_b,.brand_info_c,.brand_info_d ,.ovseas_bot{
 		padding: 20px 10px;
 	}
-	.brand_info_d .brand_info_c1,.ovseas_bot{
+	.brand_info_d .brand_info_c1{
 		padding:30px 5px;
 		p.detail_d {
 			padding-top: 0px;

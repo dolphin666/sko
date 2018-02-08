@@ -4,7 +4,7 @@ body {
 	margin: 0 auto;
 	padding: 0;
 	font-size: 12px;
-	font-family: "微软雅黑", "Microsoft YaHei";
+	font-family: "PingFangSC-Regular, sans-serif;","微软雅黑", "Microsoft YaHei";
 	overflow-x: hidden;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -48,7 +48,7 @@ li {
 }
 
 img {
-	Vertical-aliagn: top;
+	Vertical-align: top;
 	border: 0;
 }
 
@@ -133,6 +133,7 @@ a:hover {
 	height: 280px;
 	width: 80px;
 	z-index: 1000;
+	a{color:#fff;text-decoration: none}
 	.right_fixed {
 		position: absolute;
 		right: -20px;
@@ -225,7 +226,11 @@ a:hover {
 		padding: 50px 60px;
 	}
 }
-
+@media (max-width: 1240px) {
+	#header {
+		padding: 20px 40px;
+	}
+}
 @media (max-width: 748px) {
 	#footer, #footer_02 {
 		padding: 30px 20px;
@@ -241,10 +246,13 @@ body {
 	padding: 20px 140px 0px 160px;
 	border: none;
 	@media (max-width: 1420px) {
-		padding: 20px 40px;
+		padding: 20px 60px 0;
+	}
+	@media (max-width: 1240px) {
+		padding: 20px 40px 0;
 	}
 	@media (max-width: 780px) {
-		padding: 20px 20px;
+		padding: 20px 20px 0;
 	}
 	> .container-fluid {
 		width: 100%;
@@ -260,6 +268,9 @@ body {
 			> a {
 				background-color: #fff;
 				padding: 10px 20px 45px;
+			}
+			a:hover{
+				color: #C5152D;
 			}
 			.sub-nav {
 				position: fixed;
@@ -281,7 +292,6 @@ body {
 					margin-right: 60px;
 					font-size: 14px;
 					line-height: 49px;
-					//padding-top: 4px;
 					position: relative;
 					float: left;
 					a {
@@ -343,14 +353,20 @@ body {
 			li:nth-child(8) .sub-nav dl {margin-right: -420px;}
 		}
 	}
+	@media (max-width:768px){
+		#bs-navbar{
+			display: none;
+		}
+	}
 
 }
-
+.ovh {
+	overflow: hidden; }
 #bs-navbar {
 	color: #292929;
 	font-size: 14px;
 	font-weight: bold;
-	margin-top: 12px;
+	margin-top: 6px;
 	a {
 		color: #292929;
 	}

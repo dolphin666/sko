@@ -116,6 +116,10 @@ a:hover {
 	height: 280px;
 	width: 80px;
 	z-index: 1000;
+	a{
+		color: #fff;
+		text-decoration: none;
+	}
 	.right_fixed {
 		position: absolute;
 		right: -20px;
@@ -218,24 +222,18 @@ body {
 	padding: 20px 140px 0px 160px;
 	border: none;
 	@media (max-width: 1420px) {
-		padding: 20px 60px;
+		padding: 20px 60px 0;
 	}
 	@media (max-width: 1240px) {
-		padding: 20px 40px;
+		padding: 20px 40px 0;
 	}
 	@media (max-width: 780px) {
-		padding: 20px 20px;
+		padding: 20px 20px 0;
 	}
 	> .container-fluid {
 		width: 100%;
 		padding: 0;
 	}
-	//.logo {
-	//	float: left;
-	//	width: 218px;
-	//	height: 53px;
-	//	background: url("../img/pingtu.png") no-repeat;
-	//}
 	@media (max-width: 480px) {
 		.logo img {
 			height: 50px;
@@ -246,6 +244,9 @@ body {
 			> a {
 				background-color: #fff;
 				padding: 10px 20px 45px;
+			}
+			a:hover{
+				color: #C5152D;
 			}
 			.sub-nav {
 				position: fixed;
@@ -267,7 +268,6 @@ body {
 					margin-right: 60px;
 					font-size: 14px;
 					line-height: 49px;
-					//padding-top: 2px;
 					position: relative;
 					float: left;
 					a {
@@ -651,9 +651,6 @@ body {
 	bottom: 0;
 	left: 42px;
 	margin: auto;
-	/*background: url("../img/bofang.png");
-	background-size: 100%;
-	background-repeat: no-repeat;*/
 	@media (max-width: 765px){
 		left: 5px
 	}
@@ -665,28 +662,6 @@ body {
 	vertical-align: top;
 }
 
-/*.banner .shangyi{
-	display: block;
-	width: 60px;
-	height:60px;
-	position: absolute;
-	top:0;
-	bottom:0;
-	left: 50px;
-	margin: auto;
-	z-index: 990;
-}
-.banner .xiayi{
-	display: block;
-	width: 60px;
-	height:60px;
-	position: absolute;
-	top:0;
-	bottom:0;
-	right: 50px;
-	margin: auto;
-	z-index: 990;
-}*/
 
 /* 通用部分 */
 .en_title {
@@ -750,9 +725,6 @@ a.read-more {
 
 /* 关于舒士客 about-1 */
 #about_1 {
-	//@media (max-width: 768px){
-	//	margin-top: 101px;
-	//}
 	.main-title {
 		padding-bottom: 52px;
 	}
@@ -776,7 +748,6 @@ a.read-more {
 		padding-top: 77px;
 	}
 	h4 {
-		//width: @w-100;
 		font-size: 18px;
 		color: @font-black;
 		padding-top: 72px;
@@ -983,12 +954,6 @@ a.read-more {
 				}
 			}
 		}
-		/*.coo_box:hover{
-			-webkit-box-shadow: 5px 5px 30px 0px #ebebeb;
-			-moz-box-shadow: 5px 5px 30px 0px #ebebeb;
-			box-shadow: 5px 5px 30px 0px #ebebeb;
-			transition: all 0.6s ease 0s;
-		}*/
 		> div:nth-child(2) > .coo_box>.lf i {
 			background-position: -67px -65px;
 		}
@@ -1035,15 +1000,6 @@ a.read-more {
 			}
 			div.col_w {
 				padding: 0 5px 20px;
-
-				//img {
-				//	position: relative;
-				//	z-index: 10;
-				//	width: 100%;
-				//	-webkit-box-shadow: 10px 10px 20px 0 #C7C7C7;
-				//	-moz-box-shadow: 10px 10px 20px 0 #C7C7C7;
-				//	box-shadow: 10px 10px 20px 0 #C7C7C7;
-				//}
 			}
 		}
 	}
@@ -1065,11 +1021,7 @@ a.read-more {
 			}
 		}
 	}
-	/*@media (max-width:1200px){
-		.swiper-container4>.swiper-wrapper>div.swiper-slide{
-			margin-right:61px;
-		}
-	}*/
+
 	/* 轮播控制点 */
 	.swiper-pagination-bullets{
 		bottom: 13%;
@@ -1080,11 +1032,10 @@ a.read-more {
 		display: inline-block;
 		border-radius: 100%;
 		background: #fff;
-		//opacity: .2;
 	}
 	.swiper-pagination-bullet-active{
 		opacity: 1;
-		background :#007aff;/*:#eee ;*/
+		background :#007aff;
 	}
 }
 
