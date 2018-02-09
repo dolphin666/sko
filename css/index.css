@@ -449,11 +449,6 @@ body {
   color: #C5152D;
   font-weight: normal;
 }
-#bs-navbar ul {
-  /*li.active a {
-			color: @font-red;
-		}*/
-}
 #bs-navbar ul li:first-child {
   padding: 10px 19px;
 }
@@ -464,6 +459,9 @@ body {
 #bs-navbar ul li:last-child {
   padding: 10px 30px 10px 15px;
   color: #aaa;
+}
+#bs-navbar ul li.active a {
+  color: #C5152D;
 }
 /* 移动端头部 */
 .clear {
