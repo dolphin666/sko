@@ -30,3 +30,17 @@ $(function () {
         })
     })
 })
+
+/*$(this).parent().addClass("active");
+$(this).parent().siblings().children("p").css("display", "none");
+$(this).parent().children("p").css("display", "block");*/
+
+/*
+$(function () {
+    $("#header #bs-navbar .list-menu li").click(function (event) {
+        event.stopPropagation();
+        console.log("11");
+        $(this).sibling("li").removeClass("active");
+        $(this).addClass("active");
+    })
+})*/

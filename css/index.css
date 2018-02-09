@@ -346,7 +346,24 @@ body {
     margin-right: -200px;
   }
 }
-@media (max-width: 1420px) and (min-width: 992px) {
+@media (max-width: 1420px) and (min-width: 1241px) {
+  #header ul li:nth-child(4) .sub-nav dl {
+    margin-right: 120px;
+  }
+  #header ul li:nth-child(5) .sub-nav dl {
+    margin-right: -74px;
+  }
+  #header ul li:nth-child(6) .sub-nav dl {
+    margin-right: -60px;
+  }
+  #header ul li:nth-child(7) .sub-nav dl {
+    margin-right: -150px;
+  }
+  #header ul li:nth-child(8) .sub-nav dl {
+    margin-right: -280px;
+  }
+}
+@media (max-width: 1240px) and (min-width: 1201px) {
   #header ul li:nth-child(4) .sub-nav dl {
     margin-right: 100px;
   }
@@ -363,15 +380,32 @@ body {
     margin-right: -300px;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 1200px) and (min-width: 992px) {
   #header ul li:nth-child(4) .sub-nav dl {
-    margin-right: -170px;
+    margin-right: 60px;
   }
   #header ul li:nth-child(5) .sub-nav dl {
-    margin-right: -370px;
+    margin-right: -134px;
   }
   #header ul li:nth-child(6) .sub-nav dl {
-    margin-right: -300px;
+    margin-right: -120px;
+  }
+  #header ul li:nth-child(7) .sub-nav dl {
+    margin-right: -210px;
+  }
+  #header ul li:nth-child(8) .sub-nav dl {
+    margin-right: -340px;
+  }
+}
+@media (max-width: 991px) {
+  #header ul li:nth-child(4) .sub-nav dl {
+    margin-right: -140px;
+  }
+  #header ul li:nth-child(5) .sub-nav dl {
+    margin-right: -330px;
+  }
+  #header ul li:nth-child(6) .sub-nav dl {
+    margin-right: -260px;
   }
   #header ul li:nth-child(7) .sub-nav dl {
     margin-right: -300px;
@@ -415,6 +449,11 @@ body {
   color: #C5152D;
   font-weight: normal;
 }
+#bs-navbar ul {
+  /*li.active a {
+			color: @font-red;
+		}*/
+}
 #bs-navbar ul li:first-child {
   padding: 10px 19px;
 }
@@ -425,9 +464,6 @@ body {
 #bs-navbar ul li:last-child {
   padding: 10px 30px 10px 15px;
   color: #aaa;
-}
-#bs-navbar ul li.active a {
-  color: #C5152D;
 }
 /* 移动端头部 */
 .clear {
@@ -577,7 +613,7 @@ body {
   width: 100%;
 }
 .m-sub-menu .sec-sub-list li {
-  line-height: 60px;
+  line-height: 50px;
   border-bottom: 1px solid #f2f2f2;
 }
 .m-sub-menu .sec-sub-list li a {
@@ -1089,6 +1125,12 @@ a.read-more > span {
 #join form .row p button {
   border: none;
   background: rgba(255, 255, 255, 0);
+}
+@media (max-width: 500px) {
+  #join form .row p .tel_form,
+  #join form .row p .name_form {
+    width: 140px;
+  }
 }
 #join form .row p:last-child {
   float: right;

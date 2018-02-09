@@ -10,7 +10,6 @@ body {
 	box-sizing: border-box;
 	height: 1000px;
 }
-
 div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, blockquote, p {
 	padding: 0;
 	margin: 0;
@@ -316,17 +315,31 @@ body {
 			li:nth-child(7) .sub-nav dl {margin-right: -70px;}
 			li:nth-child(8) .sub-nav dl {margin-right: -200px;}
 		}
-		@media(max-width:1420px) and (min-width:992px) {
+		@media(max-width:1420px) and (min-width:1241px) {
+		li:nth-child(4) .sub-nav dl {margin-right: 120px;}
+		li:nth-child(5) .sub-nav dl {margin-right: -74px;}
+		li:nth-child(6) .sub-nav dl {margin-right: -60px;}
+		li:nth-child(7) .sub-nav dl {margin-right: -150px;}
+		li:nth-child(8) .sub-nav dl {margin-right: -280px;}
+		}
+		@media(max-width:1240px) and (min-width:1201px) {
 			li:nth-child(4) .sub-nav dl {margin-right: 100px;}
 			li:nth-child(5) .sub-nav dl {margin-right: -94px;}
 			li:nth-child(6) .sub-nav dl {margin-right: -80px;}
 			li:nth-child(7) .sub-nav dl {margin-right: -170px;}
 			li:nth-child(8) .sub-nav dl {margin-right: -300px;}
 		}
+		@media(max-width:1200px) and (min-width:992px) {
+			li:nth-child(4) .sub-nav dl {margin-right: 60px;}
+			li:nth-child(5) .sub-nav dl {margin-right: -134px;}
+			li:nth-child(6) .sub-nav dl {margin-right: -120px;}
+			li:nth-child(7) .sub-nav dl {margin-right: -210px;}
+			li:nth-child(8) .sub-nav dl {margin-right: -340px;}
+		}
 		@media (max-width:991px){
-			li:nth-child(4) .sub-nav dl {margin-right: -170px;}
-			li:nth-child(5) .sub-nav dl {margin-right: -370px;}
-			li:nth-child(6) .sub-nav dl {margin-right: -300px;}
+			li:nth-child(4) .sub-nav dl {margin-right: -140px;}
+			li:nth-child(5) .sub-nav dl {margin-right: -330px;}
+			li:nth-child(6) .sub-nav dl {margin-right: -260px;}
 			li:nth-child(7) .sub-nav dl {margin-right: -300px;}
 			li:nth-child(8) .sub-nav dl {margin-right: -420px;}
 		}
@@ -378,9 +391,9 @@ body {
 			padding: 10px 30px 10px 15px;
 			color: #aaa;
 		}
-		li.active a {
+		/*li.active a {
 			color: @font-red;
-		}
+		}*/
 	}
 }
 /* 移动端头部 */
@@ -532,7 +545,7 @@ body {
 	width: 100%;
 }
 .m-sub-menu .sec-sub-list li {
-	line-height: 60px;
+	line-height: 50px;
 	border-bottom: 1px solid #f2f2f2;
 }
 .m-sub-menu .sec-sub-list li a {
@@ -1078,6 +1091,11 @@ a.read-more {
 				input, button {
 					border: none;
 					background: rgba(255, 255, 255, 0);
+				}
+				@media (max-width: 500px){
+					.tel_form,.name_form{
+						width: 140px;
+					}
 				}
 			}
 			p:last-child {
